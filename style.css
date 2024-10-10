@@ -1,0 +1,381 @@
+table,th,td{
+    border:3px solid rgb(154, 149, 149);
+    text-align: center;
+ }
+ th{
+    background-color: yellow;
+ }
+ nav {
+        background-color: #000000f8;
+        color: rgb(220, 220, 228);
+        padding: 0rem ;
+        font-weight: bold;
+         /* display: flex;  */
+        justify-content: space-between;
+        /* align-items: center; */
+        /* filter:blur(2); */
+        position: relative;
+    }
+    .infos{
+        display: flex;
+        padding-left: 25rem;
+        margin-bottom: 1rem;
+    }
+
+    .infos ul {
+        list-style: none;
+        display: flex;
+        
+        margin-top: 2rem;
+        margin-left: 10rem;
+        padding: 0;
+    }
+    .infos ul li {
+        margin-left: 2rem;
+        
+
+    }
+    .infos ul li a {
+        color: #ccd1db;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 0rem 0rem;
+        
+        border-radius: 5px;
+        font-size: 24px;
+        transition: background-color 0.3s;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    .infos ul li a:hover {
+        background-color: #010604;
+        text-decoration: underline overline white;;
+        color: #3036e7;
+        /* color: #2257b2; */
+    }
+   section {
+    border: 2px solid black;
+    padding: 5px 5px;
+    margin: 1rem;
+    filter: blur(2);
+    
+   }
+.coord{
+    display:flex;
+    margin-inline-end: 170%;
+}
+.coord ul li  {
+    list-style: none;
+    padding:0rem 1.3rem;
+    font-size: 20px;
+  
+    
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+.box {
+    width: 45%;
+}
+   /* #sami{
+    border: 15px solid #809ed5;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 52px;
+   } */
+
+   #about-me h1 {
+    font-size: 35px;
+    text-align: center;
+    color: #2257b2;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  #about-me p {
+    font-size: 23px;
+    margin-left: 2rem;
+    color: rgb(23, 29, 22);
+    margin-top: 0.2cm;
+  }
+
+  /* #video */
+  .background-video {
+    position: fixed; /* Utilisez fixed pour que la vidéo reste en place */
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    opacity: 15%;
+    filter:blur(2)
+    
+    
+}
+#skill h1{
+    font-size: 36px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 1.5rem;
+    padding-left: 2rem;
+    color: #2257b2;
+    margin-bottom: 0;
+   
+    text-decoration: underline;
+    
+}
+
+/* Skills */
+
+.all_skills {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    margin-left: 0;
+    
+}
+  .skill {
+    border: 1px solid rgb(23, 4, 4);
+    display: block;
+    border-radius: 6px;
+    text-align: center;
+    
+    margin-bottom: 1rem;
+   
+    margin-left: -5rem;
+    padding: 10px;
+    width: 3in;
+    margin-left: 10rem;
+    font-size: 26px;
+    box-shadow: 0 3px 10px rgba(58, 140, 156, 0.556);
+    background-color: #858b8f33;
+  }
+  
+  .skill img {
+    height: 35px;
+    align-items: center;
+  }
+  
+  .skills h6 {
+    align-items: center;
+    font-size: 20px;
+    margin-block-start: 8px;
+    margin-block-end: 5px;
+    font-weight: bold;
+  } 
+
+  .skill h3 {
+    align-items: center;
+    font-size: 30px;
+    margin-block-start: 8px;
+    margin-block-end: 5px;
+    font-weight: bold;
+  } 
+  
+  .skills p {
+    align-items: center;
+    font-size: 15px;
+    color: gray;
+    margin-block-start: 5px;
+    margin-block-end: 5px;
+  } 
+  
+  .flex_center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+/* project */
+.projects-container {
+  margin-top: 30px;
+  margin-left: 60px;
+}
+
+.projects-container hr {
+  border: 1px solid lightgray;
+  width: 75%;
+  margin-left: 5cm;
+}
+
+.project-card {
+  margin: 0 15px 15px 30px;
+  padding-bottom: 5px;
+}
+
+.project-card h3 {
+  font-size: 25px;
+  margin-left: 30px;
+}
+
+.project-card li {
+  font-size: 20px;
+  margin-left: 30px;
+}
+.projects h2{
+  font-size: 36px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-top: 1.5rem;
+  padding-left: 2rem;
+  color: #2257b2;
+  margin-bottom: 0;
+ 
+  text-decoration: underline;
+}
+
+
+/* footer design */
+
+#footer {
+  background-color: hsla(0, 0%, 0%, 0.996);
+  color: #f3ebeb; /* Adjust color as needed */
+  text-align: center;
+  padding: 20px 0;
+  position: relative; /* Allows footer to be positioned correctly */
+  bottom: 0; /* Sticks to the bottom */
+  width: 100%; /* Full width */
+}
+
+.footer-content {
+  max-width: 1200px; /* Limit max width */
+  margin: auto; /* Center content */
+}
+
+.footer-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-content ul li {
+  display: inline; /* Display items in a line */
+  margin: 0 15px; /* Space between links */
+}
+
+.footer-content ul li a {
+  text-decoration: none;
+  color: inherit; /* Use the inherited color */
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+.footer-content ul li a:hover {
+  color: #007BFF; /* Change color on hover */
+}
+
+
+
+  
+  /* For small screens (phones) */
+@media only screen and (max-width: 600px) {
+  nav {
+      padding: 1rem;
+      text-align: center;
+  }
+
+  .coord {
+      display: block;
+      margin-inline-end: 0;
+      text-align: center;
+  }
+
+  .infos {
+      padding-left: 0;
+      margin-bottom: 1rem;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .infos ul {
+      flex-direction: column;
+      margin: 1rem 0;
+  }
+
+  .infos ul li {
+      margin: 0.5rem 0;
+  }
+
+  .container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .box {
+      width: 100%;
+      margin-bottom: 1rem;
+  }
+
+  .all_skills {
+      flex-direction: column;
+      align-items: center;
+      margin-left: 0;
+  }
+
+  .skill {
+      width: 50%;
+      margin: 2rem;
+      padding: auto;
+      font-size: 18px;
+     
+  }
+
+  #about-me h1 {
+      font-size: 28px;
+  }
+
+  #about-me p {
+      font-size: 18px;
+  }
+
+  table, th, td {
+      font-size: 14px;
+  }
+}
+
+/* For medium screens (tablets) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  nav {
+      padding: 0.5rem;
+  }
+
+  .infos {
+      padding-left: 2rem;
+      margin-bottom: 1rem;
+      flex-direction: row;
+  }
+
+  .container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .box {
+      width: 80%;
+      margin-bottom: 1rem;
+  }
+
+  .all_skills {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+  }
+
+  .skill {
+    width: 50%;
+    margin: 2rem;
+    padding: 2rem;
+    font-size: 18px;
+
+  }
+
+  #about-me h1 {
+      font-size: 16px;
+  }
+
+  #about-me p {
+      font-size: 16px;
+  }
+}
+
+  
