@@ -268,7 +268,7 @@ table,th,td{
 
   
   /* For small screens (phones) */
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
   nav {
       padding: 1rem;
       padding-left: 2rem;
@@ -278,136 +278,183 @@ table,th,td{
 
   .background-video {
     position: fixed; /* Utilisez fixed pour que la vidéo reste en place */
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -1;
-    transform: translate(-50%, -50%);
-    opacity: 15%;
-    filter:blur(2)
+    /* @media only screen and (max-width: 600px) {
+      nav {
+          padding: 1rem;
+          padding-left: 2rem;
+          text-align: center;
+          position: 1;
+      }
     
+      .coord {
+          display: block;
+          margin-inline-end: 0;
+          text-align: center;
+      }
+    
+      .infos {
+          padding-left: 0;
+          margin-bottom: 1rem;
+          flex-direction: column;
+          align-items: center;
+      }
+    
+      .container {
+          flex-direction: column;
+          align-items: center;
+      }
+    
+      .skill {
+          width: 50%;
+          margin: 2rem;
+          font-size: 14px;
+      }
+    }
+    
+   */
+   @media only screen and (max-width: 600px) {
+    nav {
+      background-color: #000000f8;
+      color: rgb(220, 220, 228);
+      padding: 2rem ;
+      margin-left:10%;
+      font-weight: bold;
+       /* display: flex;  */
+      justify-content: space-between;
+      /* align-items: center; */
+      /* filter:blur(2); */
+    
+  }
+  .all_skills {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    margin-left: 2rem;
     
 }
-  .coord {
-      display: block;
-      margin-inline-end: 0;
-      text-align: center;
-  }
+.skill h3 {
+  align-items: center;
+  font-size: 18px;
+ 
+  font-weight: bold;
+} 
 
-  section {
-    border: 2px solid black;
-    padding: 5px 5px;
-    margin: 1rem;
-    margin-left: 5rem;
-    filter: blur(2);
+.skill {
+  border: 1px solid rgb(23, 4, 4);
+  display: block;
+  border-radius: 6px;
+  text-align: center;
+  
+  margin-bottom: 1rem;
+ 
+  margin-left: -2rem;
+  padding: 3rem;
+  width: 4in;
+  margin-left: 10rem;
+  font-size: 12px;
+  box-shadow: 0 3px 10px rgba(58, 140, 156, 0.556);
+  background-color: #858b8f33;
+}
+
+    .coord{
+      display:flex;
+      margin-inline-end: 150%;
+  }
+  .coord ul li  {
+      list-style: none;
+      padding:0rem 1rem;
+      padding-right: 20%;
+      font-size: 14px;
     
-   }
-
-  .infos {
-      padding-left: 0;
-      margin-bottom: 1rem;
-      flex-direction: column;
-      align-items: center;
+      
   }
+    section  {
+      border: 2px solid black;
+      padding: 5px 6px;
+       margin: 0rem; 
+       margin-left: 2.2rem;
+      filter: blur(2);
+    }
 
-  .infos ul {
-      flex-direction: column;
-      margin: 1rem 0;
+    .infos ul {
+      list-style: none;
+      display: flex;
+      
+      margin-top: 2rem;
+      margin-left: 0rem;
+      padding: 0;
   }
-
   .infos ul li {
-      margin: 0.5rem 0;
+    margin-left: -0.5rem;
+    padding-left: 0rem;
+   
+    
+}
+.box img{
+  margin-left: -3rem;
+}
+
+
+.infos ul li a{
+  font-size: 14px;
+  margin-right:0%;
+}
+  
+    .coord {
+        display: block;
+        margin-inline-end: 0;
+        text-align: center;
+    }
+  
+    .infos {
+        padding-left: 0;
+        margin-bottom: 1rem;
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .skill {
+        width: 40%;
+        margin: 2rem;
+        font-size: 14px;
+    }
+    #skill h1{
+      font-size: 24px;
+      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      margin-top: 1.5rem;
+      padding-left: 2rem;
+      color: #2257b2;
+      margin-bottom: 0;
+     
+      text-decoration: underline;
+      
   }
 
-  .container {
-      flex-direction: column;
-      align-items: center;
-  }
-
-  .box {
-      width: 100%;
+    #about-me h1 {
+      font-size: 18px;
+      text-align: center;
+      color: #2257b2;
+      margin-left: 2rem;
       margin-bottom: 1rem;
+    }
+    
+    #about-me p {
+      font-size: 16px;
+      margin-left: 2rem;
+      color: rgb(23, 29, 22);
+      margin-top: 0.2cm;
+    }
   }
-
-  .all_skills {
-      flex-direction: column;
-      align-items: center;
-      margin-left: 0;
-  }
-
-  .skill {
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .skill {
       width: 50%;
       margin: 2rem;
-      padding: auto;
-      font-size: 14px;
-     
+      padding: 2rem;
+    }
   }
-  .skill h3{
-    font-size: 14px;
-  }
-
-  #about-me h1 {
-      font-size: 28px;
-  }
-
-  #about-me p {
-      font-size: 18px;
-  }
-
-  table, th, td {
-      font-size: 14px;
-  }
-}
-
-/* For medium screens (tablets) */
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
-  nav {
-      padding: 1rem 5rem;
-  }
-
-  .infos {
-      padding-left: 2rem;
-      margin-bottom: 1rem;
-      flex-direction: row;
-  }
-
-  .container {
-      flex-direction: column;
-      align-items: center;
-  }
-
-  .box {
-      width: 80%;
-      margin-bottom: 1rem;
-  }
-
-  .all_skills {
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-around;
-  }
-
-  .skill {
-    width: 50%;
-    margin: 2rem;
-    padding: 2rem;
-    font-size: 12px;
-
-  }
-  .skill h3{
-    font-size: 12px;
-  }
-
-  #about-me h1 {
-      font-size: 16px;
-  }
-
-  #about-me p {
-      font-size: 16px;
-  }
-}
-
-  
+    
