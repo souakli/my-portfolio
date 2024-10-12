@@ -319,6 +319,7 @@ table,th,td{
       padding: 0rem ;
       margin-left: 5%;
       width: 170%;
+      margin-top: -1rem;
       
       font-weight: bold;
        /* display: flex;  */
@@ -342,7 +343,7 @@ table,th,td{
 } 
 
 .skill {
-  border: 1px solid rgb(23, 4, 4);
+  border: 2px solid rgb(23, 4, 4);
   display: block;
   border-radius: 6px;
   text-align: center;
@@ -353,7 +354,7 @@ table,th,td{
   padding: 3rem;
   width: 4in;
   margin-left: 10rem;
-  font-size: 12px;
+  font-size: 16px;
   box-shadow: 0 3px 10px rgba(58, 140, 156, 0.556);
   background-color: #858b8f33;
 }
@@ -368,12 +369,13 @@ table,th,td{
       padding:0rem 1rem;
       padding-right: 20%;
      
-      font-size: 16px;
+      font-size: 18px;
     
       
   }
-  .body{
-    background-color: hsla(0, 23%, 95%, 0.996) ;}
+  body{
+   background-color:rgb(255, 255, 255) ;
+  }
     section  {
       border: 2px solid black;
       padding: 5px 6px;
@@ -403,7 +405,7 @@ table,th,td{
 
 
 .infos ul li a{
-  font-size: 16px;
+  font-size: 18px;
   margin-right:0%;
 }
   
@@ -429,8 +431,8 @@ table,th,td{
   
     .skill {
         width: 40%;
-        margin: 2rem;
-        font-size: 14px;
+        margin-left: 20%;
+        font-size: 16px;
     }
     #skill h1{
       font-size: 24px;
@@ -453,7 +455,8 @@ table,th,td{
     }
     
     #about-me p {
-      font-size: 16px;
+      font-size: 18px;
+      font-weight: bold;
       margin-left: 2rem;
       color: rgb(23, 29, 22);
       margin-top: 0.2cm;
@@ -469,17 +472,89 @@ table,th,td{
       position: fixed; /* Utilisez fixed pour que la vidéo reste en place */
       top: 50%;
       left: 40%;
-      min-width: 60%;
-      min-height: 60%;
-      width: 390%;
+      min-width: 30%;
+      min-height: 30%;
+      width: 300%;
       height: 100%;
-      z-index: -1;
+      z-index: -7;
       transform: translate(-50%, -50%);
-      opacity: 50%;
-      filter:blur(2)
-      
+      opacity: 0%;
+      background-color: #ffffff;
+      filter:blur(0); 
       
   }
+  .projects-container {
+    margin-top: 30px;
+    margin-left: 60px;
+  }
+  
+  .projects-container hr {
+    border: 1px solid lightgray;
+    width: 55%;
+    margin-left: 5cm;
+  }
+  
+  .project-card {
+    margin: 0 15px 15px 30px;
+    padding-bottom: 5px;
+  }
+  
+  .project-card h3 {
+    font-size: 20px;
+    margin-left: 30px;
+  }
+  
+  .project-card li {
+    font-size: 20px;
+    margin-left: 30px;
+  }
+  .projects h2{
+    font-size: 24px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 1.5rem;
+    padding-left: 2rem;
+    color: #2257b2;
+    margin-bottom: 0;
+   
+    text-decoration: underline;
+  }
+  #footer {
+    background-color: hsla(0, 0%, 0%, 0.996);
+    color: #f3ebeb; /* Adjust color as needed */
+    text-align: center;
+    padding: 20px 0;
+    position: relative; /* Allows footer to be positioned correctly */
+    bottom: 0; /* Sticks to the bottom */
+    width: 169%; /* Full width */
+    margin-left: 4%;
+  
+  }
+  
+  .footer-content {
+    max-width: 1200px; /* Limit max width */
+    margin: auto; /* Center content */
+  }
+  
+  .footer-content ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-content ul li {
+    display: inline; /* Display items in a line */
+    margin: 0 15px; /* Space between links */
+  }
+  
+  .footer-content ul li a {
+    text-decoration: none;
+    color: inherit; /* Use the inherited color */
+    transition: color 0.3s; /* Smooth color transition */
+  }
+  
+  .footer-content ul li a:hover {
+    color: #007BFF; /* Change color on hover */
+  }
+
 
   }
   @media only screen and (min-width: 601px) and (max-width: 1024px) {
