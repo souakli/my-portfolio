@@ -448,10 +448,14 @@ table,th,td{
 
     #about-me h1 {
       font-size: 18px;
+      display: block;
+      
       text-align: center;
       color: #2257b2;
-      margin-left: 10%;
+      margin: 0%;
+      padding-left: 50%;
       margin-bottom: 1rem;
+      margin-top: -17rem;
     }
     
     #about-me p {
@@ -460,12 +464,18 @@ table,th,td{
       margin-left: 2rem;
       color: rgb(23, 29, 22);
       margin-top: 0.2cm;
+      padding-bottom: 5%;
+      padding-left: 45%;
     }
     .box img{
       margin-left: 0;
-      width:250px;
+      width:80%;
       margin-top: 1rem;
-      margin-left: -50%;
+      margin-left: 0%;
+      padding: 0%;
+    }
+    .box{
+     margin-left: -40%;
     }
 
     .background-video {
@@ -487,6 +497,10 @@ table,th,td{
     margin-top: 30px;
     margin-left: 60px;
   }
+  .container {
+    display: flex;
+    justify-content: space-between;
+}
   
   .projects-container hr {
     border: 1px solid lightgray;
