@@ -317,7 +317,7 @@ table,th,td{
       background-color: #000000f8;
       color: rgb(220, 220, 228);
       padding: 0rem ;
-      margin-left: 5%;
+      margin-left: 0%;
       width: 170%;
       margin-top: -1rem;
       
@@ -380,7 +380,7 @@ table,th,td{
       border: 2px solid black;
       padding: 5px 6px;
        margin: 0rem; 
-       margin-left: 1rem;
+       margin-left: 0%;
       filter: blur(2);
       width: 165%;
     }
@@ -526,7 +526,7 @@ table,th,td{
     position: relative; /* Allows footer to be positioned correctly */
     bottom: 0; /* Sticks to the bottom */
     width: 169%; /* Full width */
-    margin-left: 4%;
+    margin-left: 0%;
   
   }
   
