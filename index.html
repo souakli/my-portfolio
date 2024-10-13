@@ -42,29 +42,7 @@
            
     
         </nav>
-        <!-- <canvas>pour inserer des graphics
-            Your browser does not support the canvas tag.
-        </canvas>
-        <script>
-            var canvas = document.getElementsByTagName("canvas")[0];
-            var context = canvas.getContext("2d");
-            context.fillRect(0, 0, 100, 100);
-        </script>     -->
-        <!-- <video> video sous titré
-            <source src="common_html_elements.mp4" type="video/mp4">
-            <track src="english_subtitles.vtt" kind="subtitles" srclang="en" label="English">
-            <track src="spanish_subtitles.vtt" kind="subtitles" srclang="es" label="Spanish">
-          </video> -->
-    
-
-    <!-- <h1 id="section" style="text-align: center;">Rècapulatif HTML5</h1>
-    <section>
-    <p> Cette première page sera dédiée à un récapulatif concernant le HTML5   </p>
-    <h2>Liste des balises et commandes à connaitre</h2>
-    <p>Cliquez sur le lien pour plus d'informations:<a href="https://author-ide.skills.network/render?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtZF9pbnN0cnVjdGlvbnNfdXJsIjoiaHR0cHM6Ly9jZi1jb3Vyc2VzLWRhdGEuczMudXMuY2xvdWQtb2JqZWN0LXN0b3JhZ2UuYXBwZG9tYWluLmNsb3VkL0lCTURldmVsb3BlclNraWxsc05ldHdvcmstQ0QwMTAxRU4tU2tpbGxzTmV0d29yay9SZWFkaW5ncy9Nb2R1bGUlMjAyL0NvbW1vbi1IVE1MLUVsZW1lbnRzLm1kIiwidG9vbF90eXBlIjoiaW5zdHJ1Y3Rpb25hbC1sYWIiLCJhZG1pbiI6ZmFsc2UsImlhdCI6MTcxMTQyNTcyNn0.zL5qDBvVayf9Wt80hq9QO-Gz9KGUrimgYt1aSFJOE2o" target="_blank">Info </a>
-    </p>
-    <p> voir la section scripts:<a  href="#script">ici</a></p>
-</section> -->
+       
     <br>
         <section id="Aboutme">
         <!-- <p>pour créer une liste en html, il suffit de raffiner ce code ci dessous: </p> -->
@@ -107,33 +85,33 @@
           
                 <div class="all_skills" >
                     
-                  <div class="skill" id="frontend" onclick="showPopup(true)">
+                  <div class="skill" id="frontend" onclick="showPopup(true,'frontend')">
                     <h3>Front-end</h3>
-                    <p>Description</p>
+                    <p>Je suis un génie</p>
                    
                   </div>  
                     
                   
-                  <div class="skill">
+                  <div class="skill" id="backend" onclick="showPopup(true,'backend')">
                     <h3>Back-end</h3>
-                    <p>Description</p>
+                    <p>Node js + express js </p>
                   </div>  
           
                   <!-- Add more skills here -->
                    <!-- <a href="" class="button" onclick="event.preventDefault();adddesc()"style="text-decoration:none"> -->
-                    <div class="skill">
+                    <div class="skill" id="modelisation" onclick="showPopup(true,'modelisation')">
                         <h3>Modélisation SI</h3>
-                        <p>Description</p>
+                        <p>BDD+UML</p>
                       </div>  
                     <!-- </div> </a> -->
-                    <div class="skill">
+                    <div class="skill" id="analyse" onclick="showPopup(true,'analyse')">
                         <h3>Analyse de données</h3>
-                        <p>Description</p>
+                        <p>Machine learning +graph +visualisation</p>
                       </div>  
           
-                      <div class="skill">
+                      <div class="skill" id="program" onclick="showPopup(true,'program')">
                         <h3>Programation</h3>
-                        <p>Description</p>
+                        <p>java + js +html+python+c#</p>
                       </div>  
 
                       <div class="skill">
@@ -149,82 +127,7 @@
         </div>
 
 </section>
-<!-- 
 
-
-     <div id="tables"> 
-        <h2>Creation des tables:</h2>
-        <p>Exemple de creation de table:</p>
-    --TAble: th pour les headers , td: data, tr: les lignes -->
-        <!-- <table style="border:3px solid black"> <!---bordure-->
-            <!-- <tr>
-            <th>Colonne 1 </th>
-            <th>Colonne 2 </th>
-            <th>Colonne 3 </th>
-             </tr>
-             <tr> 
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-             </tr>
-
-        </table>
-    </div> -->
-<!-- 
-    <div id="script">
-        <h1 >les scripts en html</h1>
-        <p>cette section permet de maitriser l'integration des scripts js dans une page html</p>
-
-    </div> --> 
-    <!-------<aside>
-        <h4>Concept Definition</h4>
-        <p>This goes over the concept mentioned in the paragraph to provide readers with further explanation if needed. However, it does not detract from the main content.</p>
-    </aside>
-                 ---->
-    <!-- <div> 
-        <h2>Ajout d'image avec une legende:</h2>
-        <figure>
-            <img src="https://th.bing.com/th/id/R.307759e0f56e7a1534e2fe78c1c597e1?rik=usj33eLsPFZFsw&riu=http%3a%2f%2fimagesolutions.ca%2fwp-content%2fuploads%2f2016%2f01%2fAlicia.jpg&ehk=Nb2oV4r%2bsBm5xZ3E7jkJASJ9MUG%2f%2fXyJ5ga5hPgh91Q%3d&risl=&pid=ImgRaw&r=0" width="50" height="50">
-            <figcaption>BM logo</figcaption>
-        </figure>
-    </div> -->
-   
-    <!-- <div id="inputs"></div>
-        <h2>exemple Liste des inputs</h2>
-        <ol>
-            <li> input type="color" pour selectionner les couleurs <input type="color"></li>
-            <li> input type date <input type="date"></li>
-            <li>input type="datatime-local <input type="datetime-local"></li>
-            <li>input type email <input type="email" placeholder="nom@hotmail.com" required></li>
-        </ol>
-        <input type="text"list="liste">
-            <datalist id="liste">
-                <option value="tomates">tomates</option>
-                <option value="fraise">fraise</option>
-
-            </datalist>
-    </div>
-        <div id="special tags">
-            <h2>quelques balises speciales</h2>
-            <p>Pour plus d'information: <a href="https://author-ide.skills.network/render?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtZF9pbnN0cnVjdGlvbnNfdXJsIjoiaHR0cHM6Ly9jZi1jb3Vyc2VzLWRhdGEuczMudXMuY2xvdWQtb2JqZWN0LXN0b3JhZ2UuYXBwZG9tYWluLmNsb3VkL0lCTURldmVsb3BlclNraWxsc05ldHdvcmstQ0QwMTAxRU4tU2tpbGxzTmV0d29yay9SZWFkaW5ncy9Nb2R1bGUlMjAzL0hUTUxfRm9ybV9MYWJfXzFfLm1kIiwidG9vbF90eXBlIjoiaW5zdHJ1Y3Rpb25hbC1sYWIiLCJhZG1pbiI6ZmFsc2UsImlhdCI6MTcxMTQyNTcxNX0.3kPkssxiSlvo7r9fisYt1-086DWZJaEqRXRTkn7Yr1c">Ici</a></p>
-        <p>exemple d'encadrement avec fielset "name=": legend pour legender le champs</p>
-        <fieldset name="personal_details"> 
-            <legend>detail</legend>
-            <label for="fname">First name:</label>
-            <input type="text" id="fname" name="fname"><br>
-            <label for="lname">Last name:</label>
-            <input type="text" id="lname" name="lname"><br>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email"><br>
-            <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" name="phone"><br>
-        </fieldset> 
-        </div>
-
-<div>
-    <p > resumé html et css : <a href="https://www.coursera.org/learn/introduction-html-css-javascript/ungradedWidget/nH87O/cheatsheet-css-overview-html5-elements" target="_blank">voir ici</a></p>
-
-</div> --> 
 <br>
 <section class="projects" id="projects">
     <h2 id="skill">
@@ -263,62 +166,20 @@
         </section>
 
         <div class="popup" id="popup" class="flex_center">
+          <button onclick="showPopup(false)" style="margin: 2%;margin-left: 10%;">X</button>
+          <div class="description" id="desc">
             <h3>Description</h3>
-            <button onclick="showPopup(false)">Ok</button>
+          </div>          
+            
+
+           
           </div>
 
 </body>
 
 
 
-<script>
-    function adddesc(){
-     var txt=document.getElementById("des1")
-     if(txt.innerHTML=="Afficher Detail"){
-        document.getElementById("des1").innerHTML="ok";
-     }
-     else{
-        document.getElementById("des1").innerHTML="Afficher Detail"
-     }
-   
-    }
 
-    function showPopup(bool) {
-  if (bool) {
-    document.getElementById('popup').style.visibility = 'visible'
-    const skills = document.getElementsByClassName('skill');
-    for (let i = 0; i < skills.length; i++) {
-        skills[i].style.pointerEvents = 'none';
-        skills[i].style.opacity = '0';
-   
-  } }else {
-    document.getElementById('popup').style.visibility = 'hidden'
-    const skills = document.getElementsByClassName('skill');
-    for (let i = 0; i < skills.length; i++) {
-        skills[i].style.pointerEvents = 'auto';
-        skills[i].style.opacity = '1';
-   
-  }
-   
-  }
-}
-
-// const popup = document.getElementById("popup");
-
-// const openPopupBtn = document.getElementById("forntend");
-// document.addEventListener("click", function(event) {
-//   // Si le clic est en dehors du popup et du bouton qui l'ouvre
-//   if (!popup.contains(event.target) && event.target !== openPopupBtn || document.getElementById('popup').style.visibility == 'hedden' ) {
-//    document.getElementById('popup').style.visibility = 'hidden';
- 
-
-//   }else{
-//     document.getElementById('popup').style.visibility = 'visible';
-   
-    
-//   }
-// });
-    </script>
 
 <!-- footer -->
 <footer id="footer">
@@ -332,6 +193,53 @@
         </ul>
     </div>
 </footer>
+
+<!-- scripts -->
+
+<script>
+  function adddesc(){
+   var txt=document.getElementById("des1")
+   if(txt.innerHTML=="Afficher Detail"){
+      document.getElementById("des1").innerHTML="ok";
+   }
+   else{
+      document.getElementById("des1").innerHTML="Afficher Detail"
+   }
+ 
+  }
+
+  function showPopup(bool,id) {
+if (bool) {
+  
+  const text=document.getElementById(id).innerHTML
+
+  document.getElementById('popup').style.visibility = 'visible'
+  
+  document.getElementById("desc").innerHTML=text
+   
+  const skills = document.getElementsByClassName('skill');
+  for (let i = 0; i < skills.length; i++) {
+      skills[i].style.pointerEvents = 'none';
+      skills[i].style.opacity = '0';
+ 
+} }else {
+  document.getElementById('popup').style.visibility = 'hidden'
+
+  const skills = document.getElementsByClassName('skill');
+  for (let i = 0; i < skills.length; i++) {
+      skills[i].style.pointerEvents = 'auto';
+      skills[i].style.opacity = '1';
+ 
+}
+ 
+}
+}
+
+
+  </script>
+
+
+
 
 
 
