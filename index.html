@@ -95,7 +95,7 @@
         </section>
     </div>
 <br>
-    <section id="Skills">
+    <section id="Skills" >
         <!-- <p>pour créer une liste en html, il suffit de raffiner ce code ci dessous: </p> -->
            
             <div id="skill">
@@ -106,11 +106,14 @@
                 <div style="clear:both;"></div>
           
                 <div class="all_skills" >
-                  <div class="skill">
+                    
+                  <div class="skill" id="frontend" onclick="showPopup(true)">
                     <h3>Front-end</h3>
                     <p>Description</p>
+                   
                   </div>  
-          
+                    
+                  
                   <div class="skill">
                     <h3>Back-end</h3>
                     <p>Description</p>
@@ -259,6 +262,11 @@
 
         </section>
 
+        <div class="popup" id="popup" class="flex_center">
+            <h3>Description</h3>
+            <button onclick="showPopup(false)">Ok</button>
+          </div>
+
 </body>
 
 
@@ -274,6 +282,42 @@
      }
    
     }
+
+    function showPopup(bool) {
+  if (bool) {
+    document.getElementById('popup').style.visibility = 'visible'
+    const skills = document.getElementsByClassName('skill');
+    for (let i = 0; i < skills.length; i++) {
+        skills[i].style.pointerEvents = 'none';
+        skills[i].style.opacity = '0';
+   
+  } }else {
+    document.getElementById('popup').style.visibility = 'hidden'
+    const skills = document.getElementsByClassName('skill');
+    for (let i = 0; i < skills.length; i++) {
+        skills[i].style.pointerEvents = 'auto';
+        skills[i].style.opacity = '1';
+   
+  }
+   
+  }
+}
+
+// const popup = document.getElementById("popup");
+
+// const openPopupBtn = document.getElementById("forntend");
+// document.addEventListener("click", function(event) {
+//   // Si le clic est en dehors du popup et du bouton qui l'ouvre
+//   if (!popup.contains(event.target) && event.target !== openPopupBtn || document.getElementById('popup').style.visibility == 'hedden' ) {
+//    document.getElementById('popup').style.visibility = 'hidden';
+ 
+
+//   }else{
+//     document.getElementById('popup').style.visibility = 'visible';
+   
+    
+//   }
+// });
     </script>
 
 <!-- footer -->
