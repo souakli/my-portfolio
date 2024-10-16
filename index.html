@@ -210,10 +210,31 @@
 
   function showPopup(bool,id) {
 if (bool) {
+  var popup = document.getElementById('popup');
   
   const text=document.getElementById(id).innerHTML
+   popup.style.visibility = 'visible'
+    setTimeout(()=>{
 
-  document.getElementById('popup').style.visibility = 'visible'
+      setTimeout(()=>{
+        
+    setTimeout(()=>{
+     popup.style.left='50%';
+     popup.style.top='50%';
+    },30)
+
+     popup.style.left='80%';
+    },30)
+     popup.style.left='40%';
+     popup.style.top='40%';
+
+    },30)
+   
+
+   
+
+    
+ 
   
   document.getElementById("desc").innerHTML=text
    

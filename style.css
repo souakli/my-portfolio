@@ -325,25 +325,27 @@ table,th,td{
 }
 .popup {
   width:80%;
-  height: 70%;
-  background-color: #d1dae3;
+  height: 50%;
+  background-color: #1313134a;
   border-radius: 3mm;
   top: 50%;
   left:50%;
   transform: translate(-50%,-50%);
   text-align: center;
   position: fixed;
-  transition: visibility 0.3s ease;
+  transition: visibility 0.3s ease;opacity: 100 0.5s ease;
   visibility: hidden;
+  
   
 }
 .description{
 
   border: 2px solid black;
-  background-color: blanchedalmond;
+  background-color: rgb(38, 88, 164);
   width: 80%;
   height: 80%;
   margin: 2%;
+  
   margin-left: 10%;
   margin-right: 5%;
   opacity: 90%;
@@ -454,9 +456,9 @@ table,th,td{
       text-align: center;
       color: #2257b2;
      
-      padding-left: 50%;
+      padding-left: 45%;
       margin-bottom: 1rem;
-      margin-top: -40%;
+      margin-top: -60%;
     }
     
     #about-me p {
@@ -464,14 +466,15 @@ table,th,td{
       font-weight: bold;
       margin-left: 2rem;
       color: rgb(23, 29, 22);
-      margin-top: 1%;
-      padding-bottom: 5%;
+      margin-top: 0%;
+      padding-bottom: 10%;
       padding-left: 45%;
     }
     .box img{
       
       width:80%;
-      margin-top: 20%;
+      margin-top: 25%;
+      margin-bottom: 25%;
       margin-left: 0%;
       padding: 0%;
       border-radius: 5%;
