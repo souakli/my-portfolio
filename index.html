@@ -197,6 +197,7 @@
 <!-- scripts -->
 
 <script>
+ 
   function adddesc(){
    var txt=document.getElementById("des1")
    if(txt.innerHTML=="Afficher Detail"){
@@ -209,8 +210,11 @@
   }
 
   function showPopup(bool,id) {
+   
+ 
+  const popup = document.getElementById('popup');
 if (bool) {
-  var popup = document.getElementById('popup');
+ 
   
   const text=document.getElementById(id).innerHTML
    popup.style.visibility = 'visible'
@@ -237,23 +241,37 @@ if (bool) {
  
   
   document.getElementById("desc").innerHTML=text
-   
+ 
   const skills = document.getElementsByClassName('skill');
   for (let i = 0; i < skills.length; i++) {
+   
+
+// Parcourir chaque élément pour récupérer son ID
+  
+    if(skills[i].id===id){
+      attributeColor(i);
+    }
+
       skills[i].style.pointerEvents = 'none';
       skills[i].style.opacity = '0';
+     
+     
  
 } }else {
   document.getElementById('popup').style.visibility = 'hidden'
-
+  
   const skills = document.getElementsByClassName('skill');
   for (let i = 0; i < skills.length; i++) {
       skills[i].style.pointerEvents = 'auto';
       skills[i].style.opacity = '1';
- 
 }
  
 }
+}
+function attributeColor( i){
+  const popup = document.getElementById('popup');
+  const colors = ["#FF5733", "#33FF57", "#3357FF", "#FFD700", "#800080", "#00FFFF", "#FF1493"];
+   popup.style.backgroundColor=colors[i];
 }
 
 
