@@ -341,7 +341,7 @@ table,th,td{
 .description{
 
   border: 2px solid black;
-  background-color: rgb(38, 88, 164);
+  background-color: rgba(234, 237, 242, 0.663);
   width: 80%;
   height: 80%;
   margin: 2%;
