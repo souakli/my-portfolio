@@ -33,8 +33,8 @@
                     <li>
                        
                         <a href="#Aboutme">About&nbsp;me</a> </li>
-                        <li> <a href="#">Skills</a></li>
-                        <li><a href="#"> Projects</a></li>  
+                        <li> <a href="#Skills">Skills</a></li>
+                        <li><a href="#projects"> Projects</a></li>  
                         <!-- <li><a href="#"> Recommendation</a></li>           -->
                 </ul>
             </div>
@@ -87,36 +87,36 @@
                     
                   <div class="skill" id="frontend" onclick="showPopup(true,'frontend')">
                     <h3>Front-end</h3>
-                    <p>Je suis un génie</p>
+                    <p> <ul style="list-style-type: none;"> <li>  &nbsp; <figure><img src="C:\Users\samio\Documents\my-portfolio\ressource\nodejs.png "    ><figcaption>NodeJs</figcaption></figure>&nbsp;&nbsp; <figure><img src="C:\Users\samio\Documents\my-portfolio\ressource\nodejs.png "    ><figcaption>NodeJs</figcaption></figure> <figure><img src="C:\Users\samio\Documents\my-portfolio\ressource\nodejs.png "    ><figcaption>NodeJs</figcaption></figure> </li> <li><figure><img src="C:\Users\samio\Documents\my-portfolio\ressource\nodejs.png "    ><figcaption>NodeJs</figcaption></figure></li> </ul> </p>
                    
                   </div>  
                     
                   
                   <div class="skill" id="backend" onclick="showPopup(true,'backend')">
                     <h3>Back-end</h3>
-                    <p>Node js + express js </p>
+                   <p> <ul style="list-style-type: none;"> <li>  &nbsp; <figure><img src="C:\Users\samio\Documents\my-portfolio\ressource\nodejs.png "    ><figcaption>NodeJs</figcaption></figure>&nbsp;&nbsp; <figure><img src="C:\Users\samio\Documents\my-portfolio\ressource\nodejs.png "    ><figcaption>NodeJs</figcaption></figure> <figure><img src="C:\Users\samio\Documents\my-portfolio\ressource\nodejs.png "    ><figcaption>NodeJs</figcaption></figure> </li> <li><figure><img src="C:\Users\samio\Documents\my-portfolio\ressource\nodejs.png "    ><figcaption>NodeJs</figcaption></figure></li> </ul> </p>
                   </div>  
           
                   <!-- Add more skills here -->
                    <!-- <a href="" class="button" onclick="event.preventDefault();adddesc()"style="text-decoration:none"> -->
                     <div class="skill" id="modelisation" onclick="showPopup(true,'modelisation')">
                         <h3>Modélisation SI</h3>
-                        <p>BDD+UML</p>
+                        <p> <ul style="list-style-type: none;"> <li>  &nbsp; <figure><img src="C:\Users\samio\Documents\my-portfolio\ressource\nodejs.png "    ><figcaption>NodeJs</figcaption></figure>&nbsp;&nbsp; <figure><img src="C:\Users\samio\Documents\my-portfolio\ressource\nodejs.png "    ><figcaption>NodeJs</figcaption></figure> <figure><img src="C:\Users\samio\Documents\my-portfolio\ressource\nodejs.png "    ><figcaption>NodeJs</figcaption></figure> </li> <li><figure><img src="C:\Users\samio\Documents\my-portfolio\ressource\nodejs.png "    ><figcaption>NodeJs</figcaption></figure></li> </ul> </p>
                       </div>  
                     <!-- </div> </a> -->
                     <div class="skill" id="analyse" onclick="showPopup(true,'analyse')">
                         <h3>Analyse de données</h3>
-                        <p>Machine learning +graph +visualisation</p>
+                        <p> <ul style="list-style-type: none;"> <li>  &nbsp; <figure><img src="C:\Users\samio\Documents\my-portfolio\ressource\nodejs.png "    ><figcaption>NodeJs</figcaption></figure>&nbsp;&nbsp; <figure><img src="C:\Users\samio\Documents\my-portfolio\ressource\nodejs.png "    ><figcaption>NodeJs</figcaption></figure> <figure><img src="C:\Users\samio\Documents\my-portfolio\ressource\nodejs.png "    ><figcaption>NodeJs</figcaption></figure> </li> <li><figure><img src="C:\Users\samio\Documents\my-portfolio\ressource\nodejs.png "    ><figcaption>NodeJs</figcaption></figure></li> </ul> </p>
                       </div>  
           
                       <div class="skill" id="program" onclick="showPopup(true,'program')">
                         <h3>Programation</h3>
-                        <p>java + js +html+python+c#</p>
+                        <p> <ul style="list-style-type: none;"> <li>  &nbsp; <figure><img src="C:\Users\samio\Documents\my-portfolio\ressource\nodejs.png "    ><figcaption>NodeJs</figcaption></figure>&nbsp;&nbsp; <figure><img src="C:\Users\samio\Documents\my-portfolio\ressource\nodejs.png "    ><figcaption>NodeJs</figcaption></figure> <figure><img src="C:\Users\samio\Documents\my-portfolio\ressource\nodejs.png "    ><figcaption>NodeJs</figcaption></figure> </li> <li><figure><img src="C:\Users\samio\Documents\my-portfolio\ressource\nodejs.png "    ><figcaption>NodeJs</figcaption></figure></li> </ul> </p>
                       </div>  
 
                       <div class="skill">
                         <h3>Conteneurisation</h3>
-                        <p>Description</p>
+                        <p> <ul style="list-style-type: none;"> <li>  &nbsp; <figure><img src="C:\Users\samio\Documents\my-portfolio\ressource\nodejs.png "    ><figcaption>NodeJs</figcaption></figure>&nbsp;&nbsp; <figure><img src="C:\Users\samio\Documents\my-portfolio\ressource\nodejs.png "    ><figcaption>NodeJs</figcaption></figure> <figure><img src="C:\Users\samio\Documents\my-portfolio\ressource\nodejs.png "    ><figcaption>NodeJs</figcaption></figure> </li> <li><figure><img src="C:\Users\samio\Documents\my-portfolio\ressource\nodejs.png "    ><figcaption>NodeJs</figcaption></figure></li> </ul> </p>
                       </div>  
 
                     
@@ -249,6 +249,9 @@ function attributeColor( i){
   
    popup.style.backgroundColor=colors[i];
 }
+
+
+// opacité +transition
 function opacity(popup,id) {
   const opacit = ['0', '0.3', '0.5', '0.7', '0.8', '1'];  // Dernière opacité à 1
   let time = 90;  // Ajustement du délai pour chaque étape
@@ -262,6 +265,7 @@ function opacity(popup,id) {
     })(i), time * i);  // Multiplie le délai par l'index pour un effet progressif
   }
   const text=document.getElementById(id).innerHTML;
+  console.log(text)
   document.getElementById("desc").innerHTML=text;
   
     setTimeout(()=>{
