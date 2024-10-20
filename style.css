@@ -284,19 +284,19 @@ table,th,td{
   
 }
 .skill p{
-  visibility: hidden;
-}
-.skill ul{
-  visibility: hidden;
-  padding-left: 0;
-  
-  list-style-type: none;
-}
-.skill ul ,li{
-  margin-bottom: 12%;
+    visibility: hidden;
+  }
+  .skill ul{
+    visibility: hidden;
+    padding-left: 0;
+    
+    list-style-type: none;
+  }
+  .skill ul ,li{
+    margin-bottom: 12%;
+   
+  }
  
-}
-
 
 
 figure {
