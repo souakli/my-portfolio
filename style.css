@@ -266,7 +266,72 @@ table,th,td{
   color: #007BFF; /* Change color on hover */
 }
 
+.popup {
+  width:80%;
+  height: 50%;
+  background-color: #1313134a;
+  border-radius: 3mm;
+  top: 50%;
+  left:50%;
+   flex-direction: row;
+  
+  transform: translate(-50%,-50%);
+  text-align: center;
+  position: fixed;
+  transition: visibility 0.1s ease;
+  visibility: hidden;
+  
+  
+}
+.skill p{
+  visibility: hidden;
+}
+.skill ul{
+  visibility: hidden;
+  padding-left: 0;
+  
+  list-style-type: none;
+}
+.skill ul ,li{
+  margin-bottom: 12%;
+ 
+}
 
+
+
+figure {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  margin-top: 10%;
+ 
+  width: 25%; /* Ajuste la largeur à celle du conteneur parent */
+  max-width: 600px; /* Limite la taille maximale de l'image */
+}
+
+/* Style de l'image */
+figure img {
+  display: block;
+  width: 80%;
+  margin-left: -25%;
+  height: auto;
+}
+
+/* Style de la légende (figcaption) */
+figcaption {
+  position: absolute;
+  top: 105%; /* Positionnement en haut de l'image */
+  left: 50%;
+  margin-left: -30%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  width: 100%; /* Largeur pour s'adapter à l'image */
+  text-align: center;
+}
 
  
   /* smartphone */
@@ -333,6 +398,8 @@ table,th,td{
   border-radius: 3mm;
   top: 50%;
   left:50%;
+   flex-direction: row;
+  
   transform: translate(-50%,-50%);
   text-align: center;
   position: fixed;
@@ -438,7 +505,7 @@ table,th,td{
     }
   
     .skill {
-        width: 40%;
+        width: 50%;
         height: 0;
         margin-left: 20%;
         font-size: 16px;
@@ -634,10 +701,11 @@ table,th,td{
     nav {
       background-color: #000000f8;
       color: rgb(220, 220, 228);
-      padding: 1rem ;
+      /* padding: 1rem ; */
       margin-left: 2%;
-      width: 156%;
+      width: 160%;
       margin-right: 2%;
+     
       margin-top: -1rem;
       
       font-weight: bold;
@@ -656,7 +724,7 @@ table,th,td{
 }
 .skill h3 {
   align-items: center;
-  font-size: 18px;
+  font-size: 24px;
   background-color: #2156be;
   color: #ccd1db;
   font-weight: bold;
@@ -687,12 +755,13 @@ table,th,td{
 
 }
 .popup {
-  width:80%;
+  width:50%;
   height: 50%;
   background-color: #1313134a;
   border-radius: 3mm;
   top: 50%;
   left:50%;
+  flex-direction: row;
   transform: translate(-50%,-50%);
   text-align: center;
   position: fixed;
@@ -707,7 +776,7 @@ table,th,td{
   background-color: rgba(234, 237, 242, 0.663);
   width: 80%;
   height: 80%;
-  margin: 2%;
+  margin: 0%;
   
   margin-left: 10%;
   margin-right: 5%;
@@ -730,7 +799,7 @@ table,th,td{
       list-style: none;
       padding:0rem 1rem;
       padding-right: 20%;
-     
+      margin: 0;
       font-size: 30px;
     
       
@@ -801,7 +870,7 @@ table,th,td{
         width: 40%;
         height: 0;
         margin-left: 20%;
-        font-size: 16px;
+        font-size: 24px;
     }
     
     #skill h1{
@@ -825,7 +894,7 @@ table,th,td{
     list-style-type: none;
   }
   .skill ul ,li{
-    margin-bottom: 0%;
+    margin-bottom: 12%;
    
   }
  
@@ -843,7 +912,7 @@ table,th,td{
     }
     
     #about-me p {
-      font-size: 30px;
+      font-size: 26px;
       font-weight: bold;
       margin-left: 0rem;
       color: rgb(23, 29, 22);
@@ -855,9 +924,9 @@ table,th,td{
     .box img{
       
       width:40%;
-      height: 25%;
+      height: 20%;
       margin-top: 2%;
-      margin-bottom: -15%;
+      margin-bottom: 0%;
       margin-left: -15%;
       padding: 0%;
       border-radius: 5%;
@@ -882,7 +951,7 @@ table,th,td{
       
   }
   .projects-container {
-    margin-top: 30px;
+    margin-top: 0%;
     margin-left: 60px;
   }
   .container {
@@ -894,11 +963,12 @@ table,th,td{
     border: 1px solid lightgray;
     width: 55%;
     margin-left: 5cm;
+    margin-bottom: 0%;
+    margin-top: -5%;
   }
   
   .project-card {
-    margin: 0 15px 15px 30px;
-    padding-bottom: 5px;
+   margin: 0;
   }
   
   .project-card h3 {
@@ -927,8 +997,9 @@ table,th,td{
     padding: 20px 0;
     position: relative; /* Allows footer to be positioned correctly */
     bottom: 0; /* Sticks to the bottom */
-    width: 169%; /* Full width */
-    margin-left: 0%;
+    width: 160%; /* Full width */
+    margin-left: 2%;
+    margin-right: -5%;
   
   }
   
@@ -962,16 +1033,18 @@ table,th,td{
     position: relative;
     display: inline-block;
     margin: 0;
-    margin-top: 10%;
+    margin-top: -5%;
+    padding-top: 0%;
+    padding-bottom: 0%;
    
-    width: 25%; /* Ajuste la largeur à celle du conteneur parent */
+    width: 15%; /* Ajuste la largeur à celle du conteneur parent */
     max-width: 600px; /* Limite la taille maximale de l'image */
   }
 
   /* Style de l'image */
   figure img {
     display: block;
-    width: 80%;
+    width: 50%;
     margin-left: -25%;
     height: auto;
   }
@@ -991,6 +1064,7 @@ table,th,td{
     width: 100%; /* Largeur pour s'adapter à l'image */
     text-align: center;
   }
+  
   
   }
     
