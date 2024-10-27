@@ -25,7 +25,7 @@
                      <li>Sami&nbsp;OUAKLI</li>
                        
                         <li>Samiouakli@hotmail.com</li>  
-                        <li>0470926010</li>           
+                        <li>+32 470-926-010</li>           
                 </ul>
 
                 <div class="infos">
@@ -35,6 +35,13 @@
                         <a href="#Aboutme">About&nbsp;me</a> </li>
                         <li> <a href="#Skills">Skills</a></li>
                         <li><a href="#projects"> Projects</a></li>  
+                        <li> <div id="language-selector">
+                          
+                          <select id="language" onchange="translatePage()">
+                              <option value="en">English</option>
+                              <option value="fr">Français</option>
+                          </select>
+                      </div></li>
                         <!-- <li><a href="#"> Recommendation</a></li>           -->
                 </ul>
             </div>
@@ -56,12 +63,12 @@
                     <source src="https://videos.pexels.com/video-files/18069235/18069235-uhd_2560_1440_24fps.mp4" type="video/mp4">
                     <!-- <source src="https://videos.pexels.com/video-files/3141208/3141208-uhd_2560_1440_25fps.mp4" type="video/mp4"> -->
                 </video>
-                <h1 >
+                <h1 id="hello">
                   Hi, I'm Sami Ouakli! <img  src="https://cdn.pixabay.com/animation/2022/12/05/10/47/10-47-58-930_512.gif" width="35px" style="margin-top: 2%;" />
                 </h1>
                 <br>
-                <p>
-                  I am a software developer with 1 year in developing web and mobile applications, as well as database optimization. I have worked on projects using technologies like Django and Angular, with a strong focus on continuous integration and deployment in Docker and Kubernetes environments. I have also collaborated on automation projects using Bash and PowerShell scripting.
+                <p id="intro">
+                  I am a recent graduate with a Bachelor’s degree in Computer Science, specializing in development and programming, and I am currently pursuing a Master’s in Data Science. My background combines a strong foundation in software development with advanced analytical techniques, positioning me well to address complex challenges in data-driven fields. I am actively seeking employment opportunities where I can leverage my programming expertise and data science skills to contribute to impactful projects. With a commitment to continuous learning and a passion for innovative problem-solving, I am excited to bring my technical skills and enthusiasm to a forward-thinking team.
                 </p>
             </div>
         </div>
@@ -85,38 +92,39 @@
           
                 <div class="all_skills" >
                     
-                  <div class="skill" id="frontend" onclick="showPopup(true,'frontend')">
+                  <div class="skill" id="frontend" onclick="showPopup(true,'frontend')" >
                     <h3>Front-end</h3>
-                    <p> <ul style="list-style-type: none;"> <li>  &nbsp; <figure><img src="C:\Users\samio\Documents\my-portfolio\ressource\nodejs.png "    ><figcaption>NodeJs</figcaption></figure>&nbsp;&nbsp; <figure><img src="C:\Users\samio\Documents\my-portfolio\ressource\nodejs.png "    ><figcaption>NodeJs</figcaption></figure> <figure><img src="C:\Users\samio\Documents\my-portfolio\ressource\nodejs.png "    ><figcaption>NodeJs</figcaption></figure> </li> <li><figure><img src="C:\Users\samio\Documents\my-portfolio\ressource\nodejs.png "    ><figcaption>NodeJs</figcaption></figure></li> </ul> </p>
+                    <p> <ul style="list-style-type: none;"> <li>  &nbsp; <figure><img src=".\ressource\htmlIMAGE.png"    style="width: 35%;" ><figcaption>HTML</figcaption></figure>&nbsp;&nbsp; <figure><img src=".\ressource\cssImg.png"    ><figcaption>CSS3</figcaption></figure> <figure><img src="ressource\reactImg.png"  style="width:43%;"  ><figcaption>ReactJs</figcaption></figure> </li> <li><figure><img src="ressource\AngularCli.png" style="width: 50%;margin-left: 5%;"   ><figcaption>AngularCli</figcaption></figure></li> </ul> </p>
                    
                   </div>  
                     
                   
                   <div class="skill" id="backend" onclick="showPopup(true,'backend')">
                     <h3>Back-end</h3>
-                   <p> <ul style="list-style-type: none;"> <li>  &nbsp; <figure><img src="C:\Users\samio\Documents\my-portfolio\ressource\nodejs.png "    ><figcaption>NodeJs</figcaption></figure>&nbsp;&nbsp; <figure><img src="C:\Users\samio\Documents\my-portfolio\ressource\nodejs.png "    ><figcaption>NodeJs</figcaption></figure> <figure><img src="C:\Users\samio\Documents\my-portfolio\ressource\nodejs.png "    ><figcaption>NodeJs</figcaption></figure> </li> <li><figure><img src="C:\Users\samio\Documents\my-portfolio\ressource\nodejs.png "    ><figcaption>NodeJs</figcaption></figure></li> </ul> </p>
+                    
+                   <p> <ul style="list-style-type: none;"> <li>  &nbsp; <figure><img src="ressource\ExpressJs.png" style="width: 45%;"   ><figcaption>ExpressJs</figcaption></figure>&nbsp;&nbsp; <figure><img src="ressource\Flask.png" style="width: 33%;"   ><figcaption>Flask</figcaption></figure> <figure><img src="C:\Users\samio\Documents\my-portfolio\ressource\nodejs.png "    ><figcaption>NodeJs</figcaption></figure> </li> <li><figure><img src="ressource\django.png"    ><figcaption>Django</figcaption></figure></li> </ul> </p>
                   </div>  
           
                   <!-- Add more skills here -->
                    <!-- <a href="" class="button" onclick="event.preventDefault();adddesc()"style="text-decoration:none"> -->
                     <div class="skill" id="modelisation" onclick="showPopup(true,'modelisation')">
                         <h3>Modélisation SI</h3>
-                        <p> <ul style="list-style-type: none;"> <li>  &nbsp; <figure><img src="C:\Users\samio\Documents\my-portfolio\ressource\nodejs.png "    ><figcaption>NodeJs</figcaption></figure>&nbsp;&nbsp; <figure><img src="C:\Users\samio\Documents\my-portfolio\ressource\nodejs.png "    ><figcaption>NodeJs</figcaption></figure> <figure><img src="C:\Users\samio\Documents\my-portfolio\ressource\nodejs.png "    ><figcaption>NodeJs</figcaption></figure> </li> <li><figure><img src="C:\Users\samio\Documents\my-portfolio\ressource\nodejs.png "    ><figcaption>NodeJs</figcaption></figure></li> </ul> </p>
+                        <p> <ul style="list-style-type: none;"> <li>  &nbsp; <figure><img src="ressource\Uml.png "    ><figcaption>Uml</figcaption></figure>&nbsp;&nbsp; <figure><img src="ressource\sql.png " ><figcaption>Sql</figcaption></figure> <figure><img src="ressource\mongodb.png "    ><figcaption>MongoDb</figcaption></figure> </li> <li><figure><img src="ressource\sqlLite.png "    ><figcaption>SqlLite</figcaption></figure></li> </ul> </p>
                       </div>  
                     <!-- </div> </a> -->
                     <div class="skill" id="analyse" onclick="showPopup(true,'analyse')">
                         <h3>Analyse de données</h3>
-                        <p> <ul style="list-style-type: none;"> <li>  &nbsp; <figure><img src="C:\Users\samio\Documents\my-portfolio\ressource\nodejs.png "    ><figcaption>NodeJs</figcaption></figure>&nbsp;&nbsp; <figure><img src="C:\Users\samio\Documents\my-portfolio\ressource\nodejs.png "    ><figcaption>NodeJs</figcaption></figure> <figure><img src="C:\Users\samio\Documents\my-portfolio\ressource\nodejs.png "    ><figcaption>NodeJs</figcaption></figure> </li> <li><figure><img src="C:\Users\samio\Documents\my-portfolio\ressource\nodejs.png "    ><figcaption>NodeJs</figcaption></figure></li> </ul> </p>
+                        <p> <ul style="list-style-type: none;"> <li>  &nbsp; <figure><img src="ressource\MachineLear.png"    ><figcaption>Machine Learning</figcaption></figure>&nbsp;&nbsp; <figure><img src=" ressource\DataViz.png"    ><figcaption>Vizualisation</figcaption></figure> <figure><img src="ressource\graphMinig.png "    ><figcaption>GraphMining</figcaption></figure> </li>  </ul> </p>
                       </div>  
           
                       <div class="skill" id="program" onclick="showPopup(true,'program')">
                         <h3>Programation</h3>
-                        <p> <ul style="list-style-type: none;"> <li>  &nbsp; <figure><img src="C:\Users\samio\Documents\my-portfolio\ressource\nodejs.png "    ><figcaption>NodeJs</figcaption></figure>&nbsp;&nbsp; <figure><img src="C:\Users\samio\Documents\my-portfolio\ressource\nodejs.png "    ><figcaption>NodeJs</figcaption></figure> <figure><img src="C:\Users\samio\Documents\my-portfolio\ressource\nodejs.png "    ><figcaption>NodeJs</figcaption></figure> </li> <li><figure><img src="C:\Users\samio\Documents\my-portfolio\ressource\nodejs.png "    ><figcaption>NodeJs</figcaption></figure></li> </ul> </p>
+                        <p> <ul style="list-style-type: none;"> <li>  &nbsp; <figure><img src="ressource\java .png"    ><figcaption>Java</figcaption></figure>&nbsp;&nbsp; <figure><img src="ressource\Python.png"    ><figcaption>Python</figcaption></figure> <figure><img src="ressource\javascript.png"  style="width: 30%;"  ><figcaption>Javascript</figcaption></figure> </li> <li><figure><img src=" ressource\R.png"    ><figcaption>R for data</figcaption></figure></li> </ul> </p>
                       </div>  
 
-                      <div class="skill">
+                      <div class="skill" id="Contenair" onclick="showPopup(true,'Contenair')">
                         <h3>Conteneurisation</h3>
-                        <p> <ul style="list-style-type: none;"> <li>  &nbsp; <figure><img src="C:\Users\samio\Documents\my-portfolio\ressource\nodejs.png "    ><figcaption>NodeJs</figcaption></figure>&nbsp;&nbsp; <figure><img src="C:\Users\samio\Documents\my-portfolio\ressource\nodejs.png "    ><figcaption>NodeJs</figcaption></figure> <figure><img src="C:\Users\samio\Documents\my-portfolio\ressource\nodejs.png "    ><figcaption>NodeJs</figcaption></figure> </li> <li><figure><img src="C:\Users\samio\Documents\my-portfolio\ressource\nodejs.png "    ><figcaption>NodeJs</figcaption></figure></li> </ul> </p>
+                        <p> <ul style="list-style-type: none;"> <li>  &nbsp; <figure><img src="ressource\kubernet.png"    ><figcaption>kubernetes</figcaption></figure>&nbsp;&nbsp; <figure><img src="ressource\docker .png "    ><figcaption>Docker</figcaption></figure> </ul> </p>
                       </div>  
 
                     
@@ -166,7 +174,7 @@
         </section>
 
         <div class="popup" id="popup" class="flex_center">
-          <button onclick="showPopup(false)" style="margin: 2%;margin-left: 10%;">X</button>
+          <button onclick="showPopup(false)" style="margin: 2%;margin-left: 90%;width: 5%;background-color: rgb(204, 193, 193);border-radius: 5%;">X</button>
           <div class="description" id="desc">
             <h3>Description</h3>
           </div>          
@@ -285,6 +293,37 @@ function opacity(popup,id) {
     },50)
 }
 
+const translations = {
+        en: {
+            aboutMe: "About me",
+            skills: "Skills",
+            projects: "Projects",
+            contact: "Contact",
+            hi: "Hi, I'm Sami Ouakli!",
+            introText: `I am a recent graduate with a Bachelor’s degree in Computer Science, specializing in development and programming, and I am currently pursuing a Master’s in Data Science. My background combines a strong foundation in software development with advanced analytical techniques, positioning me well to address complex challenges in data-driven fields. I am actively seeking employment opportunities where I can leverage my programming expertise and data science skills to contribute to impactful projects. With a commitment to continuous learning and a passion for innovative problem-solving, I am excited to bring my technical skills and enthusiasm to a forward-thinking team.`,
+            footerText: "&copy; 2024 Sami Ouakli. All rights reserved."
+        },
+        fr: {
+            aboutMe: "À propos de moi",
+            skills: "Compétences",
+            projects: "Projets",
+            contact: "Contact",
+            hi: "Bonjour, je suis Sami Ouakli!",
+            introText: `Je suis un diplômé récent avec une licence en informatique, spécialisé en développement et programmation, et je poursuis actuellement un master en science des données. Mon parcours combine une solide formation en développement logiciel avec des techniques analytiques avancées, me positionnant bien pour relever des défis complexes dans les domaines axés sur les données. Je suis activement à la recherche d'opportunités d'emploi où je pourrai mettre à profit mon expertise en programmation et mes compétences en science des données pour contribuer à des projets impactants. Avec un engagement pour l'apprentissage continu et une passion pour la résolution de problèmes innovants, je suis enthousiaste à l'idée d'apporter mes compétences techniques et mon enthousiasme à une équipe visionnaire.`,
+            footerText: "&copy; 2024 Sami Ouakli. Tous droits réservés."
+        }
+    };
+
+    function translatePage() {
+        const language = document.getElementById("language").value;
+        // document.getElementById("about-link").textContent = translations[language].aboutMe;
+        // document.getElementById("skills-link").textContent = translations[language].skills;
+        // document.getElementById("projects-link").textContent = translations[language].projects;
+        // document.getElementById("contact-link").textContent = translations[language].contact;
+        document.getElementById("hello").textContent = translations[language].hi;
+        document.getElementById("intro").textContent = translations[language].introText;
+        document.getElementById("footer-text").textContent = translations[language].footerText;
+    }
 
 
   </script>
