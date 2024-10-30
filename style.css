@@ -18,6 +18,7 @@ table,th,td{
     }
     .infos{
         display: flex;
+        position: relative;
         padding-left: 25rem;
         margin-bottom: 0rem;
         margin-top: 0%;
@@ -32,7 +33,7 @@ table,th,td{
         padding: 0;
     }
     .infos ul li {
-        margin-left: 2rem;
+        margin-left: 0rem;
         
 
     }
@@ -43,7 +44,7 @@ table,th,td{
         padding: 0rem 0rem;
         
         border-radius: 5px;
-        font-size: 24px;
+        font-size: 20px;
         transition: background-color 0.3s;
         font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
@@ -76,6 +77,8 @@ table,th,td{
 
 #language-selector select {
     padding: 8px;
+    padding-top: 2%;
+    justify-content: center;
     font-size: 16px;
     color: #333;
     background-color: #f5f5f5;
@@ -238,6 +241,10 @@ table,th,td{
   margin-top: 30px;
   margin-left: 60px;
 }
+.projects-container ul li{
+  margin-top: 2%;
+justify-content: space-between;
+}
 
 .projects-container hr {
   border: 1px solid lightgray;
@@ -248,6 +255,18 @@ table,th,td{
 .project-card {
   margin: 0 15px 15px 30px;
   padding-bottom: 5px;
+}
+.project-card ul li{
+  margin-top: 2%;
+  margin-bottom: 2%;
+  
+  justify-content: space-between;
+}
+.project-card ul {
+  margin-top: 2%;
+  margin-bottom: 5%;
+  
+  justify-content: space-between;
 }
 
 .project-card h3 {
@@ -325,6 +344,23 @@ table,th,td{
   
   
 }
+.cert{
+  width:80%;
+  height: 90%;
+  background-color: #1313134a;
+  border-radius: 3mm;
+  top: 50%;
+  left:50%;
+   flex-direction: row;
+  
+  transform: translate(-50%,-50%);
+  text-align: center;
+  position: fixed;
+  transition: visibility 0.1s ease;
+  visibility: hidden;
+  
+  
+}
 .skill p{
     visibility: hidden;
   }
@@ -374,7 +410,10 @@ figcaption {
   width: 80%; /* Largeur pour s'adapter à l'image */
   text-align: center;
 }
+.images{
 
+  width: 90%;
+}
  
   /* smartphone */
    @media only screen and (max-width: 600px) {
@@ -394,6 +433,12 @@ figcaption {
       /* filter:blur(2); */
     
   }
+  /* .images{
+
+    width: 90%;
+    margin-top: 10%;
+  } */
+
   .all_skills {
     display: flex;
     flex-direction: row;
@@ -502,11 +547,11 @@ figcaption {
       display: flex;
       
       margin-top: 2rem;
-      margin-left: 2rem;
+      margin-left: -4rem;
       padding: 0;
   }
   .infos ul li {
-    margin-left: 0rem;
+    margin-left: -1.5rem;
     padding-left: 0rem;
    
     
@@ -718,7 +763,7 @@ figcaption {
   /* Style de l'image */
   figure img {
     display: block;
-    width: 70%;
+    width: 80%;
     margin-left: 15%;
     height: auto;
     margin-top: 2%;
@@ -729,7 +774,7 @@ figcaption {
     position: absolute;
     top: 105%; /* Positionnement en haut de l'image */
     left: 50%;
-    margin-left:-10%;
+    margin-left:-5%;
     transform: translateX(-50%);
     background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
     color: white;
@@ -739,6 +784,69 @@ figcaption {
     width: 80%; /* Largeur pour s'adapter à l'image */
     text-align: center;
   }
+
+  #language-selector {
+    display: flex;
+    align-items: center;
+    margin-right: -2em;
+}
+
+#language-selector label {
+    font-size: 14px;
+    color: #333333;
+    margin-right: 0.5em;
+}
+
+#language-selector select {
+    padding: 8px;
+    padding-top: 2%;
+    justify-content: center;
+    font-size: 16px;
+    color: #333;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Ajout d'effets pour survol et focus */
+#language-selector select:hover {
+    background-color: #233780;
+    color: rgba(255, 255, 255, 0.352);
+}
+
+#language-selector select:focus {
+    border-color: #007acc;
+    background-color: #ffffff;
+    color: #010604;
+}
+
+
+.cert{
+  width:80%;
+  height: 20%;
+  
+  background-color: #1313134a;
+  border-radius: 3mm;
+  top: 50%;
+  left:50%;
+   flex-direction: row;
+  
+  transform: translate(-50%,-50%);
+  text-align: center;
+  position: fixed;
+  transition: visibility 0.1s ease;
+  visibility: hidden;
+  
+  
+}
+.cert img{
+  width: 120%;
+  margin-top: 10%;
+}
+
   }
   @media only screen and (min-width: 601px) and (max-width: 1024px) {
     nav {
@@ -997,6 +1105,8 @@ figcaption {
     margin-top: 0%;
     margin-left: 60px;
   }
+
+  
   .container {
     display: flex;
     justify-content: space-between;

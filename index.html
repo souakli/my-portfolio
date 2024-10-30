@@ -12,7 +12,7 @@
 
 </head>
 
-<body style="background-color: hsla(0, 23%, 95%, 0.996) ">
+<body style="background-color: hsla(0, 23%, 95%, 0.996) " id="content">
      
    
     
@@ -32,14 +32,18 @@
                     <ul>
                     <li>
                        
-                        <a href="#Aboutme">About&nbsp;me</a> </li>
-                        <li> <a href="#Skills">Skills</a></li>
-                        <li><a href="#projects"> Projects</a></li>  
+                        <a href="#Aboutme" id="about-link" style="white-space: nowrap;">About me</a> </li>
+                        <li> <a href="#Skills" id="skills-link">Skills</a></li>
+                        <li><a href="#projects"id="projects-link"> Projects</a></li>  
                         <li> <div id="language-selector">
                           
                           <select id="language" onchange="translatePage()">
                               <option value="en">English</option>
                               <option value="fr">Français</option>
+                              <option value="nl">Nederlands</option>
+                              <!-- <option value="amz">Tamazight</option>
+                              <option value="ar">Arabe</option> -->
+                            
                           </select>
                       </div></li>
                         <!-- <li><a href="#"> Recommendation</a></li>           -->
@@ -84,7 +88,7 @@
         <!-- <p>pour créer une liste en html, il suffit de raffiner ce code ci dessous: </p> -->
            
             <div id="skill">
-                <h1>
+                <h1 id="compet">
                 Skills
                 </h1>
                 <div id="slider">
@@ -93,14 +97,14 @@
                 <div class="all_skills" >
                     
                   <div class="skill" id="frontend" onclick="showPopup(true,'frontend')" >
-                    <h3>Front-end</h3>
+                    <h3 id="Front">Front-end</h3>
                     <p> <ul style="list-style-type: none;"> <li>  &nbsp; <figure><img src=".\ressource\htmlIMAGE.png"    style="width: 35%;" ><figcaption>HTML</figcaption></figure>&nbsp;&nbsp; <figure><img src=".\ressource\cssImg.png"    ><figcaption>CSS3</figcaption></figure> <figure><img src="ressource\reactImg.png"  style="width:43%;"  ><figcaption>ReactJs</figcaption></figure> </li> <li><figure><img src="ressource\AngularCli.png" style="width: 50%;margin-left: 5%;"   ><figcaption>AngularCli</figcaption></figure></li> </ul> </p>
                    
                   </div>  
                     
                   
                   <div class="skill" id="backend" onclick="showPopup(true,'backend')">
-                    <h3>Back-end</h3>
+                    <h3 id="Back">Back-end</h3>
                     
                    <p> <ul style="list-style-type: none;"> <li>  &nbsp; <figure><img src="ressource\ExpressJs.png" style="width: 45%;"   ><figcaption>ExpressJs</figcaption></figure>&nbsp;&nbsp; <figure><img src="ressource\Flask.png" style="width: 33%;"   ><figcaption>Flask</figcaption></figure> <figure><img src="C:\Users\samio\Documents\my-portfolio\ressource\nodejs.png "    ><figcaption>NodeJs</figcaption></figure> </li> <li><figure><img src="ressource\django.png"    ><figcaption>Django</figcaption></figure></li> </ul> </p>
                   </div>  
@@ -108,22 +112,22 @@
                   <!-- Add more skills here -->
                    <!-- <a href="" class="button" onclick="event.preventDefault();adddesc()"style="text-decoration:none"> -->
                     <div class="skill" id="modelisation" onclick="showPopup(true,'modelisation')">
-                        <h3>Modélisation SI</h3>
+                        <h3 id="Si">Information System Modeling</h3>
                         <p> <ul style="list-style-type: none;"> <li>  &nbsp; <figure><img src="ressource\Uml.png "    ><figcaption>Uml</figcaption></figure>&nbsp;&nbsp; <figure><img src="ressource\sql.png " ><figcaption>Sql</figcaption></figure> <figure><img src="ressource\mongodb.png "    ><figcaption>MongoDb</figcaption></figure> </li> <li><figure><img src="ressource\sqlLite.png "    ><figcaption>SqlLite</figcaption></figure></li> </ul> </p>
                       </div>  
                     <!-- </div> </a> -->
                     <div class="skill" id="analyse" onclick="showPopup(true,'analyse')">
-                        <h3>Analyse de données</h3>
+                        <h3 id="Ad">Data Analysis</h3>
                         <p> <ul style="list-style-type: none;"> <li>  &nbsp; <figure><img src="ressource\MachineLear.png"    ><figcaption>Machine Learning</figcaption></figure>&nbsp;&nbsp; <figure><img src=" ressource\DataViz.png"    ><figcaption>Vizualisation</figcaption></figure> <figure><img src="ressource\graphMinig.png "    ><figcaption>GraphMining</figcaption></figure> </li>  </ul> </p>
                       </div>  
           
                       <div class="skill" id="program" onclick="showPopup(true,'program')">
-                        <h3>Programation</h3>
+                        <h3 id="Pr">Programming</h3>
                         <p> <ul style="list-style-type: none;"> <li>  &nbsp; <figure><img src="ressource\java .png"    ><figcaption>Java</figcaption></figure>&nbsp;&nbsp; <figure><img src="ressource\Python.png"    ><figcaption>Python</figcaption></figure> <figure><img src="ressource\javascript.png"  style="width: 30%;"  ><figcaption>Javascript</figcaption></figure> </li> <li><figure><img src=" ressource\R.png"    ><figcaption>R for data</figcaption></figure></li> </ul> </p>
                       </div>  
 
                       <div class="skill" id="Contenair" onclick="showPopup(true,'Contenair')">
-                        <h3>Conteneurisation</h3>
+                        <h3 id="Co">Containerization</h3>
                         <p> <ul style="list-style-type: none;"> <li>  &nbsp; <figure><img src="ressource\kubernet.png"    ><figcaption>kubernetes</figcaption></figure>&nbsp;&nbsp; <figure><img src="ressource\docker .png "    ><figcaption>Docker</figcaption></figure> </ul> </p>
                       </div>  
 
@@ -139,39 +143,55 @@
 <br>
 <section class="projects" id="projects">
     <h2 id="skill">
-      Projects
+     <p id="proj"> Projects</p> 
     </h2>
     <div style="clear:both;"></div>
 
       <div id="projects-container" class="projects-container">
         <div class="project-card">
-          <h3>Language Translator API</h3>
+          <h3 id="P1"></h3>
           <ul>
-            <li>Created and deployed a multilingual translation service using IBM Watson Language Translator and Flask. This API was used in an e-learning platform to support real-time translation of course materials and live chat interactions.</li>
+            <li id="P1_1">Technology: Angular</li>
+            <li id="P1_2">Client: Department of Languages, University of Namur</li>
+            <li id="P1_3">Development of a platform for managing remote work and leave requests for the university's Department of Languages. The solution provides administrators and users with tools to easily handle remote work requests, track leave, and access detailed follow-up reports.</li>
           </ul>
         </div>
         <hr>
         <div class="project-card">
-          <h3>Travel Booking Website</h3>
+          <h3 id="P2">Order Management Application for Fruit and Vegetable Suppliers</h3>
           <ul>
-            <li>Built a dynamic travel booking website for a tourism company using React, Express.js, and MongoDB. Integrated flight and hotel booking APIs, with a secure payment gateway via Stripe, and implemented features like booking history, itinerary generation, and customer reviews.</li>
+            <li id="P2_1">Technology: React</li>
+            <li id="P2_2">Client: Fruit and Vegetable Suppliers</li>
+            <li id="P2_3">Design of an application to streamline order management. It allows customers to place orders, and suppliers to validate and confirm these orders. The application also includes a real-time tracking feature for ongoing orders.</li> 
           </ul>
         </div>
         <hr>
         <div class="project-card">
-          <h3>Healthcare Appointment System</h3>
+          <h3 id="P3">Administrative Process Platform for Studying Abroad (in progress)</h3>
           <ul>
-            <li>Developed a web-based appointment scheduling system for a healthcare provider using Vue.js and Node.js. Integrated with IBM Watson Assistant to offer automated appointment booking and reminders through a chatbot interface.</li>
+            <li id="P3_1">Client: Students</li>
+            <li id="P3_2">Technology: Html,Css and js for frontend, Flask for backend</li>
+            <li id="P3_3">Creation of a centralized platform designed for students beginning their administrative procedures for studying abroad. The platform aims to simplify access to information, track procedural steps, and provide useful resources for students involved in international mobility.
+              Objective: Offer structured support for students in their processes for studying abroad.</li>
           </ul>
         </div>
   </div>
   </section>
 
 
+<section id="skill">
+  <h1 id="Certificat" style="margin-top: 0%;">Certificate of Achievement</h1>
+  <button id="btn1" style="width: 15%;margin-top: 2%; margin-left: 25%;" onclick="showCertificat(true,'btn1')" style="margin: 2%;margin-left: 90%;width: 5%;background-color: rgb(204, 193, 193);border-radius: 5%;"><img class="images" src="ressource\certificats\backendCertificat.png" ></button>
+ &nbsp; <button id="btn2" style="width: 15%;" onclick="showCertificat(true,'btn2')" style="margin: 2%;margin-left: 90%;width: 5%;background-color: rgb(204, 193, 193);border-radius: 5%;"><img  class="images" src="ressource\certificats\jshtmlCertif.png" ></button>
+ &nbsp; <button id="btn3" style="width: 15%;" onclick="showCertificat(true,'btn3')" style="margin: 2%;margin-left: 90%;width: 5%;background-color: rgb(204, 193, 193);border-radius: 5%;"><img style="width: 71%;"  src="ressource\certificats\attReussite.png" ></button>
 
 
 
-        </section>
+</section>
+
+
+
+        
 
         <div class="popup" id="popup" class="flex_center">
           <button onclick="showPopup(false)" style="margin: 2%;margin-left: 90%;width: 5%;background-color: rgb(204, 193, 193);border-radius: 5%;">X</button>
@@ -183,6 +203,18 @@
            
           </div>
 
+          <div class="cert" id="cert" class="flex_center">
+            <button onclick="showCertificats(false)" style="margin: 2%;margin-left: 90%;width: 5%;background-color: rgb(204, 193, 193);border-radius: 5%;">ok</button>
+            <div class="description" id="imageContainer">
+              
+            </div>    
+  
+             
+            </div>
+  
+
+          
+
 </body>
 
 
@@ -192,145 +224,14 @@
 <!-- footer -->
 <footer id="footer">
     <div class="footer-content">
-        <p>&copy; 2024 Sami Ouakli. All rights reserved.</p>
+        <p id="footer-text"> © 2024 Sami Ouakli. All rights reserved.</p>
         <ul>
-            <li><a href="#Aboutme">About Me</a></li>
-            <li><a href="#Skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#">Contact</a></li>
+            <li ><a href="#Aboutme" id="footer_A">About Me</a></li>
+            <li ><a href="#Skills" id="footer_S">Skills</a></li>
+            <li ><a href="#projects"id="footer_P">Projects</a></li>
+            <li ><a href="#"id="footer_C">Contact</a></li>
         </ul>
     </div>
 </footer>
-
-<!-- scripts -->
-
-<script>
- 
-  function adddesc(){
-   var txt=document.getElementById("des1")
-   if(txt.innerHTML=="Afficher Detail"){
-      document.getElementById("des1").innerHTML="ok";
-   }
-   else{
-      document.getElementById("des1").innerHTML="Afficher Detail"
-   }
- 
-  }
-
-  function showPopup(bool,id) {
-   
-  
-  const popup = document.getElementById('popup');
-if (bool) {
-    opacity(popup,id);
-
-  const skills = document.getElementsByClassName('skill');
-  for (let i = 0; i < skills.length; i++) {
-   
-
-// Parcourir chaque élément pour récupérer son ID
-  
-    if(skills[i].id===id){
-      attributeColor(i);
-     
-    }
-
-      skills[i].style.pointerEvents = 'none';
-      skills[i].style.opacity = '0';
-     
-     
- 
-} }else {
-  document.getElementById('popup').style.visibility = 'hidden'
-  
-  const skills = document.getElementsByClassName('skill');
-  for (let i = 0; i < skills.length; i++) {
-      skills[i].style.pointerEvents = 'auto';
-      skills[i].style.opacity = '1';
-}
- 
-}
-}
-function attributeColor( i){
-  const popup = document.getElementById('popup');
-  const colors = ["#FF5733", "#33FF57", "#3357FF", "#FFD700", "#800080", "#00FFFF", "#FF1493"];
-  
-   popup.style.backgroundColor=colors[i];
-}
-
-
-// opacité +transition
-function opacity(popup,id) {
-  const opacit = ['0', '0.3', '0.5', '0.7', '0.8', '1'];  // Dernière opacité à 1
-  let time = 90;  // Ajustement du délai pour chaque étape
-  popup.style.visibility = 'visible';  // Affiche le popup dès le début
-
-  for (let i = 0; i < opacit.length; i++) {
-    setTimeout(((i) => {
-      return () => {
-        popup.style.opacity = opacit[i];
-      };
-    })(i), time * i);  // Multiplie le délai par l'index pour un effet progressif
-  }
-  const text=document.getElementById(id).innerHTML;
-  console.log(text)
-  document.getElementById("desc").innerHTML=text;
-  
-    setTimeout(()=>{
-
-      setTimeout(()=>{
-        
-    setTimeout(()=>{
-     popup.style.left='50%';
-     popup.style.top='50%';
-    },50)
-
-     popup.style.left='80%';
-    },50)
-     popup.style.left='40%';
-     popup.style.top='40%';
-
-    },50)
-}
-
-const translations = {
-        en: {
-            aboutMe: "About me",
-            skills: "Skills",
-            projects: "Projects",
-            contact: "Contact",
-            hi: "Hi, I'm Sami Ouakli!",
-            introText: `I am a recent graduate with a Bachelor’s degree in Computer Science, specializing in development and programming, and I am currently pursuing a Master’s in Data Science. My background combines a strong foundation in software development with advanced analytical techniques, positioning me well to address complex challenges in data-driven fields. I am actively seeking employment opportunities where I can leverage my programming expertise and data science skills to contribute to impactful projects. With a commitment to continuous learning and a passion for innovative problem-solving, I am excited to bring my technical skills and enthusiasm to a forward-thinking team.`,
-            footerText: "&copy; 2024 Sami Ouakli. All rights reserved."
-        },
-        fr: {
-            aboutMe: "À propos de moi",
-            skills: "Compétences",
-            projects: "Projets",
-            contact: "Contact",
-            hi: "Bonjour, je suis Sami Ouakli!",
-            introText: `Je suis un diplômé récent avec une licence en informatique, spécialisé en développement et programmation, et je poursuis actuellement un master en science des données. Mon parcours combine une solide formation en développement logiciel avec des techniques analytiques avancées, me positionnant bien pour relever des défis complexes dans les domaines axés sur les données. Je suis activement à la recherche d'opportunités d'emploi où je pourrai mettre à profit mon expertise en programmation et mes compétences en science des données pour contribuer à des projets impactants. Avec un engagement pour l'apprentissage continu et une passion pour la résolution de problèmes innovants, je suis enthousiaste à l'idée d'apporter mes compétences techniques et mon enthousiasme à une équipe visionnaire.`,
-            footerText: "&copy; 2024 Sami Ouakli. Tous droits réservés."
-        }
-    };
-
-    function translatePage() {
-        const language = document.getElementById("language").value;
-        // document.getElementById("about-link").textContent = translations[language].aboutMe;
-        // document.getElementById("skills-link").textContent = translations[language].skills;
-        // document.getElementById("projects-link").textContent = translations[language].projects;
-        // document.getElementById("contact-link").textContent = translations[language].contact;
-        document.getElementById("hello").textContent = translations[language].hi;
-        document.getElementById("intro").textContent = translations[language].introText;
-        document.getElementById("footer-text").textContent = translations[language].footerText;
-    }
-
-
-  </script>
-
-
-
-
-
 
 </html>
