@@ -307,10 +307,10 @@ imageContainer.innerHTML = "";
 imageContainer.appendChild(newImg); 
 if(id!=='btn3'){
  
-  if (window.innerWidth <= 600) {
+  if (window.innerWidth <= 700) {
     newImg.style.width='100%';
   newImg.style.marginTop='10%';}
-  else if (window.innerWidth > 600 &&  (window.innerWidth <= 1080)){
+  else if (window.innerWidth > 700 &&  (window.innerWidth <= 1080)){
     newImg.style.width='60%';
     newImg.style.marginTop='1%';
   }
@@ -325,7 +325,7 @@ if(id!=='btn3'){
 
   if (window.innerWidth <= 700) {
     newImg.style.width='100%';
-  newImg.style.marginTop='10%';}
+  newImg.style.marginTop='8%';}
   else if (window.innerWidth > 700 &&  (window.innerWidth <= 1080)){
     newImg.style.width='45%';
   newImg.style.marginTop='2.5%';
