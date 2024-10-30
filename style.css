@@ -440,7 +440,7 @@ figcaption {
        /* display: flex;  */
       justify-content: space-between;
       /* align-items: center; */
-      /* filter:blur(2); */
+      /*  filter:blur(2); */
     
   }
   
@@ -553,11 +553,11 @@ figcaption {
       display: flex;
       
       margin-top: 2rem;
-      margin-left: -4rem;
-      padding: 0;
+      margin-left: -1rem;
+      padding: -0.2rem;
   }
   .infos ul li {
-    margin-left: -1rem;
+    margin-left: -10%;
     padding-left: 0rem;
    
     
@@ -585,7 +585,7 @@ figcaption {
     .infos {
         /* padding-left: 3rem; */
         margin-bottom: 1rem;
-        margin-left: -65%;
+        margin-left: -50%;
         margin-right: 50%;
         flex-direction: column;
         align-items: center;
