@@ -23,6 +23,10 @@ table,th,td{
         margin-bottom: 0rem;
         margin-top: 0%;
     }
+    .description ul{
+      list-style-type: none;
+      
+     }
 
     .infos ul {
         list-style: none;
@@ -385,7 +389,9 @@ justify-content: space-between;
    
   }
  
-
+.description ul{
+  margin-top: 3%;
+}
 
 figure {
   position: relative;
@@ -401,7 +407,7 @@ figure {
 figure img {
   display: block;
   width: 40%;
-  margin-left: 10%;
+  margin-left: 0%;
   height: auto;
 }
 
@@ -410,7 +416,7 @@ figcaption {
   position: absolute;
   top: 105%; /* Positionnement en haut de l'image */
   left: 30%;
-  margin-left: 0%;
+  margin-left: -10%;
   transform: translateX(-50%);
   background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
   color: white;
@@ -626,6 +632,7 @@ figcaption {
   }
   .skill ul ,li{
     margin-bottom: 0%;
+    margin-left: -5%;
    
   }
  
@@ -765,6 +772,11 @@ figcaption {
     width: 25%; /* Ajuste la largeur à celle du conteneur parent */
     max-width: 600px; /* Limite la taille maximale de l'image */
   }
+ .description ul{
+  list-style-type: none;
+  margin-left: -13%;
+  margin-top: -2%;
+ }
 
   /* Style de l'image */
   figure img {
@@ -780,12 +792,12 @@ figcaption {
     position: absolute;
     top: 105%; /* Positionnement en haut de l'image */
     left: 50%;
-    margin-left:-5%;
+    margin-left:5%;
     transform: translateX(-50%);
     background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
     color: white;
     padding: 10px;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: bold;
     width: 80%; /* Largeur pour s'adapter à l'image */
     text-align: center;
@@ -1007,6 +1019,112 @@ figcaption {
 }
 
 
+
+
+.description ul{
+  list-style-type: none;
+  margin-left: -13%;
+  margin-top: -2%;
+ }
+
+  /* Style de l'image */
+  figure img {
+    display: block;
+    width: 80%;
+    margin-left: 15%;
+    height: auto;
+    margin-top: 2%;
+  }
+
+  /* Style de la légende (figcaption) */
+  figcaption {
+    position: absolute;
+    top: 105%; /* Positionnement en haut de l'image */
+    left: 50%;
+    margin-left:5%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+    color: white;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    width: 70%; /* Largeur pour s'adapter à l'image */
+    text-align: center;
+  }
+
+  #language-selector {
+    display: flex;
+    align-items: center;
+    margin-right: -2em;
+}
+
+#language-selector label {
+    font-size: 14px;
+    color: #333333;
+    margin-right: 0.5em;
+}
+
+#language-selector select {
+    padding: 8px;
+    padding-top: 2%;
+    margin-left: -5%;
+    justify-content: center;
+    font-size: 16px;
+    color: #333;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Ajout d'effets pour survol et focus */
+#language-selector select:hover {
+    background-color: #233780;
+    color: rgba(255, 255, 255, 0.352);
+}
+
+#language-selector select:focus {
+    border-color: #007acc;
+    background-color: #ffffff;
+    color: #010604;
+}
+
+
+.cert{
+  width:75%;
+  height: 120%;
+  
+  background-color: #1313134a;
+  border-radius: 3mm;
+  top: 50%;
+  left:50%;
+   flex-direction: row;
+  
+  transform: translate(-50%,-50%);
+  text-align: center;
+  position: fixed;
+  transition: visibility 0.1s ease;
+  visibility: hidden;
+  
+  
+}
+.cert img{
+  width: 120%;
+  margin-top: 10%;
+}
+.btn{
+  margin: 2%;
+  margin-left: 7%;
+  width: 20%;
+ 
+  background-color: rgb(204, 193, 193);
+  border-radius: 5%;
+
+}
+
+
 .infos ul li a{
   font-size: 26px;
   margin-right:0%;
@@ -1201,41 +1319,6 @@ figcaption {
   }
   
 
-  figure {
-    position: relative;
-    display: inline-block;
-    margin: 0;
-    margin-top: -5%;
-    padding-top: 0%;
-    padding-bottom: 0%;
-   
-    width: 15%; /* Ajuste la largeur à celle du conteneur parent */
-    max-width: 600px; /* Limite la taille maximale de l'image */
-  }
-
-  /* Style de l'image */
-  figure img {
-    display: block;
-    width: 50%;
-    margin-left: -25%;
-    height: auto;
-  }
-
-  /* Style de la légende (figcaption) */
-  figcaption {
-    position: absolute;
-    top: 105%; /* Positionnement en haut de l'image */
-    left: 50%;
-    margin-left: -30%;
-    transform: translateX(-50%);
-    background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
-    color: white;
-    padding: 10px;
-    font-size: 16px;
-    font-weight: bold;
-    width: 100%; /* Largeur pour s'adapter à l'image */
-    text-align: center;
-  }
   
   
   }
