@@ -323,10 +323,10 @@ if(id!=='btn3'){
 
 }else{
 
-  if (window.innerWidth <= 600) {
+  if (window.innerWidth <= 700) {
     newImg.style.width='100%';
   newImg.style.marginTop='10%';}
-  else if (window.innerWidth > 600 &&  (window.innerWidth <= 1080)){
+  else if (window.innerWidth > 700 &&  (window.innerWidth <= 1080)){
     newImg.style.width='45%';
   newImg.style.marginTop='2.5%';
   newImg.style.marginBottom='1%';
