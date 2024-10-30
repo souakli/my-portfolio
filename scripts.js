@@ -306,19 +306,37 @@ const imageContainer = document.getElementById("imageContainer");
 imageContainer.innerHTML = ""; 
 imageContainer.appendChild(newImg); 
 if(id!=='btn3'){
-  newImg.style.width='58%';
+ 
   if (window.innerWidth <= 600) {
-  newImg.style.marginTop='0%';}
+    newImg.style.width='100%';
+  newImg.style.marginTop='10%';}
+  else if (window.innerWidth > 600 &&  (window.innerWidth <= 1080)){
+    newImg.style.width='60%';
+    newImg.style.marginTop='1%';
+  }
   else{
-    newImg.style.marginTop='3%';
+    newImg.style.width='60%';
+    newImg.style.marginTop='1%';
   }
 
   
 
 }else{
-  newImg.style.width='45%';
+
+  if (window.innerWidth <= 600) {
+    newImg.style.width='100%';
+  newImg.style.marginTop='10%';}
+  else if (window.innerWidth > 600 &&  (window.innerWidth <= 1080)){
+    newImg.style.width='45%';
   newImg.style.marginTop='2.5%';
   newImg.style.marginBottom='1%';
+  }
+  else{
+    newImg.style.width='45%';
+  newImg.style.marginTop='2.5%';
+  newImg.style.marginBottom='1%';
+  }
+ 
 
 }
 
