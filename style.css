@@ -491,9 +491,21 @@ figcaption {
   padding-left: 3vw; 
   margin-bottom: 1vw;
   margin-left: 0vw;
-  margin-right: 10vw;
+  margin-right: 0vw;
   flex-direction: column;
   align-items: center;
+}
+.infos ul li a {
+  color: #898486;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0rem 0rem;
+  
+  
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .infos ul {
@@ -848,7 +860,7 @@ figcaption {
 #language-selector select {
     padding: 8px;
     padding-top: 3%;
-    margin-left: -4vw;
+    margin-left: -3vw;
     justify-content: center;
     font-size: 14px;
     width: 95%;
@@ -965,8 +977,8 @@ figcaption {
 
 }
 .popup {
-  width:60vw;
-  height: 60vw;
+  width:70vw;
+  height: 62vw;
   background-color: #1313134a;
   border-radius: 3mm;
   top: 50%;
@@ -1262,7 +1274,7 @@ figcaption {
       
       width:40%;
       height: 20%;
-      margin-top: 2%;
+      margin-top: 6%;
       margin-bottom: 0%;
       margin-left: -15%;
       padding: 0%;
