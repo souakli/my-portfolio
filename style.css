@@ -451,8 +451,8 @@ figcaption {
    /* smartphone */
    @media only screen and (max-width: 700px) {
     nav {
-      background-color: #09097ff8;
-      color: rgb(220, 220, 228);
+      background-color: #3366FF;
+      color: #424040;
       
       margin-left: 2%;
       width: 155vw;
@@ -567,7 +567,7 @@ figcaption {
 .skill h3 {
   align-items: center;
   font-size: 20px;
-  background-color: #09097ff8;
+  background-color: #3366FF;
   color: #ccd1db;
   font-weight: bold;
   margin-top: -2vh;
@@ -640,9 +640,10 @@ figcaption {
    
   }
     section  {
-      border: 2px solid black;
+      border: 2px solid rgb(10, 15, 91);
       padding: 5px 6px;
-        
+        background-color: #d1e98214;
+      
        margin-left: 2%;
       filter: blur(2);
       width: 158%;
@@ -678,7 +679,7 @@ figcaption {
       font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
       margin-top: 1.5rem;
       padding-left: 2rem;
-      color: #2257b2;
+      color: #307450;
       margin-bottom: 0;
      
       text-decoration: underline;
@@ -705,7 +706,7 @@ figcaption {
       display: block;
       
       text-align: center;
-      color: #2257b2;
+      color: #105d2f;
      
       padding-left: 45%;
       margin-bottom: 1rem;
@@ -745,6 +746,7 @@ figcaption {
       z-index: -7;
       transform: translate(-50%, -50%);
       opacity: 0%;
+      visibility: hidden;
       background-color: #ffffff;
       filter:blur(0); 
       
@@ -783,13 +785,13 @@ figcaption {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin-top: 1.5rem;
     padding-left: 2rem;
-    color: #2257b2;
+    color:#307450;
     margin-bottom: 0;
    
     text-decoration: underline;
   }
   #footer {
-    background-color: #09097ff8;
+    background-color: #3366FF;
     color: #f3ebeb; /* Adjust color as needed */
     text-align: center;
     padding: 20px 0;
@@ -943,7 +945,7 @@ figcaption {
   }
   @media only screen and (min-width: 701px) and (max-width: 1024px) {
     nav {
-      background-color: #09097ff8;
+      background-color: #3366FF;
       color: rgb(220, 220, 228);
       
       margin-left: 2%;
@@ -968,7 +970,7 @@ figcaption {
 .skill h3 {
   align-items: center;
   font-size: 24px;
-  background-color: #09097ff8;
+  background-color: #3366FF;
   color: #ccd1db;
   font-weight: bold;
   margin-top: 0;
@@ -1363,7 +1365,7 @@ figcaption {
     text-decoration: underline;
   }
   #footer {
-    background-color: #09097ff8;
+    background-color: #3366FF;
     color: #f3ebeb; /* Adjust color as needed */
     text-align: center;
     padding: 20px 0;
