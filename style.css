@@ -1,3 +1,16 @@
+/* Applique l'animation de fondu sur tout le corps de la page */
+body {
+  opacity: 0;  /* La page commence invisible */
+  animation: fadeIn 1.9s ease forwards;  /* L'animation prend 1.5 secondes */
+}
+
+/* Définition de l'animation de fondu */
+@keyframes fadeIn {
+  100% {
+      opacity: 1;  /* La page devient complètement visible */
+  }
+}
+
 .button {
   display: inline-block;
   padding: 10px 20px;
@@ -8,17 +21,16 @@
   text-decoration: none;
   font-size: 16px;
   font-weight: bold;
-  transition: background-color 0.3s, transform 0.2s;
-}
+  transition: background-color 0.3s, transform 0.2s;}
   nav {
-      background-color: #000000f8;
+      background-color: #10397ef8;
       color: rgb(220, 220, 228);
       padding: 0rem ;
       margin-left: 1vw;
       width: 95vw;
       margin-right: 1vw;
       margin-top: -1rem;
-      
+      animation: colorChange 15s infinite;
       font-weight: bold;
        /* display: flex;  */
       justify-content: space-between;
@@ -26,6 +38,47 @@
       /*  filter:blur(2); */
     
   }
+@keyframes changeColor_font {
+  0% {
+    color: #0d0861; /* Couleur initiale */
+}
+25% {
+    color: #2b6461; /* Rouge/orange */
+}
+50% {
+    color: #206684; /* Bleu clair */
+}
+75% {
+    color: #134187; /* Vert clair */
+}
+100% {
+    color: #153d7d; /* Retour à la couleur initiale */
+}
+  
+}
+  @keyframes colorChange {
+    0% {
+        background-color: #0d0861; /* Couleur initiale */
+    }
+    25% {
+        background-color: #2a5779; /* Rouge/orange */
+    }
+    50% {
+        background-color: #206684; /* Bleu clair */
+    }
+    75% {
+        background-color: #134187; /* Vert clair */
+    }
+    100% {
+        background-color: #153d7d; /* Retour à la couleur initiale */
+    }
+}
+
+
+
+  nav:hover {
+    background-color: #150f90; /* Couleur de la barre au survol */
+}
     .infos{
         display: flex;
         position: relative;
@@ -161,6 +214,7 @@
     font-size: 35px;
     text-align: center;
     color: #2257b2;
+    animation: changeColor_font 15s infinite;
     margin-left: 2rem;
     margin-bottom: 1rem;
   }
@@ -327,6 +381,7 @@ justify-content: space-between;
   background-color: hsla(0, 0%, 0%, 0.996);
   color: #f3ebeb; /* Adjust color as needed */
   text-align: center;
+  animation: colorChange 15s infinite;
   padding: 20px 0;
   position: relative; /* Allows footer to be positioned correctly */
   bottom: 0; /* Sticks to the bottom */
@@ -571,6 +626,7 @@ figcaption {
   color: #ccd1db;
   font-weight: bold;
   margin-top: -2vh;
+  animation: colorChange 15s infinite;
 } 
 
 
@@ -704,6 +760,7 @@ figcaption {
     #about-me h1 {
       font-size: 20px;
       display: block;
+      
       
       text-align: center;
       color: #105d2f;
