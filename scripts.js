@@ -96,19 +96,24 @@ const translations = {
           P1_2:"Client: Department of Languages, University of Namur",
           P1_3:"Development of a platform for managing remote work and leave requests for the university's Department of Languages. The solution provides administrators and users with tools to easily handle remote work requests, track leave, and access detailed follow-up reports.",
 
-          P2:"Order Management Application for Fruit and Vegetable Suppliers",
-          P2_1:"Technology: React",
-          P2_2:"Client: Fruit and Vegetable Suppliers",
-          P2_3:"Design of an application to streamline order management. It allows customers to place orders, and suppliers to validate and confirm these orders. The application also includes a real-time tracking feature for ongoing orders.",
+          P2:"Business Intelligence Project for Renewable Energy Data Analysis at ELIA",
+          P2_1:"Technology: SSIS and PowerBI",
+          P2_2:"Client: Elia",
+          P2_3:"Design and implementation of a BI solution to analyze large-scale data on renewable energy (wind and solar) in Belgium. Applied ETL processes to centralize data and developed interactive dashboards to visualize trends and optimize energy resource management",
 
-          P3:"Administrative Process Platform for Studying Abroad (in progress)",
-          P3_1:"Client: Students",
-          P3_2:"Technology: Html,Css and js for frontend, Flask for backend",
-          P3_3:"Creation of a centralized platform designed for students beginning their administrative procedures for studying abroad. The platform aims to simplify access to information, track procedural steps, and provide useful resources for students involved in international mobility.Objective: Offer structured support for students in their processes for studying abroad.",
+          P3:"Seeker - Hiking and Monument Discovery App",
+          P3_1:"Client:Tourists and hiking enthusiasts",
+          P3_2:"Technology: Machine Learning, Graph Mining, Data Visualization",
+          P3_3:"Developed an app that uses clues scattered across a region to guide users to discover monuments. The app calculates the shortest path to reach monuments while maximizing the number of artworks/sites visited. Leveraged machine learning for clue optimization, graph mining for route analysis, and data visualization for user-friendly interaction.",
           footer_A:"About me",
           footer_S:"Skills",
           footer_C:"Contacts",
 
+          P4:"Automatic Weekly Scheduling Generator",
+          P4_1:"Client: everyone needs To automate scheduling based on availability constraints.",
+          P4_2:"Technology: Constraint Programming, Python, Optimization Algorithms",
+          
+          P4_3:"Developed a system that automatically generates a weekly schedule by analyzing the availability of individuals and applying constraint-based optimization. Ensures efficient allocation of resources while respecting all predefined constraints.",
 
 
         // Skills
@@ -137,18 +142,24 @@ const translations = {
         P1_2: "Client : Département des Langues, Université de Namur",
         P1_3: "Développement d'une plateforme pour la gestion du télétravail et des demandes de congé pour le Département des Langues de l'université. La solution offre aux administrateurs et aux utilisateurs des outils pour gérer facilement les demandes de travail à distance, suivre les congés et accéder à des rapports de suivi détaillés.",
     
-        P2: "Application de Gestion des Commandes pour les Fournisseurs de Fruits et Légumes",
-        P2_1: "Technologie : React",
-        P2_2: "Client : Fournisseurs de Fruits et Légumes",
-        P2_3: "Conception d'une application pour simplifier la gestion des commandes. Elle permet aux clients de passer des commandes et aux fournisseurs de valider et confirmer celles-ci. L'application inclut également un suivi en temps réel pour les commandes en cours.",
-    
-        P3: "Plateforme de Processus Administratif pour les Études à l'Étranger (en cours)",
-        P3_1: "Client : Étudiants",
-        P3_2: "Technologie : Html, Css et js pour le front-end, Flask pour le back-end",
-        P3_3: "Création d'une plateforme centralisée pour les étudiants commençant leurs démarches administratives pour les études à l'étranger. La plateforme vise à simplifier l'accès aux informations, à suivre les étapes procédurales et à fournir des ressources utiles pour les étudiants en mobilité internationale. Objectif : offrir un soutien structuré pour les étudiants dans leurs démarches pour les études à l'étranger.",
+       P2: "Projet de Business Intelligence pour l'analyse des données des énergies renouvelables chez ELIA",
+       P2_1: "Technologie : SSIS et Power BI",
+       P2_2: "Client : Elia",
+       P2_3: "Conception et mise en œuvre d'une solution BI pour analyser des données massives sur les énergies renouvelables (éolienne et solaire) en Belgique. Application de processus ETL pour centraliser les données et développement de tableaux de bord interactifs pour visualiser les tendances et optimiser la gestion des ressources énergétiques.",
+        
+        P3: "Seeker - Application de randonnée et découverte de monuments",
+        P3_1: "Client : Touristes et amateurs de randonnée",
+        P3_2: "Technologie :  Machine Learning, Exploration de graphes, Visualisation de données",
+        P3_3: "Développement d'une application qui utilise des indices dispersés dans une région pour guider les utilisateurs vers la découverte de monuments. L'application calcule le chemin le plus court pour atteindre les monuments tout en maximisant le nombre d'œuvres/sites visités. Exploitation du machine learning pour optimiser les indices, de l'exploration de graphes pour analyser les itinéraires, et de la visualisation de données pour une interaction conviviale.",
+        P4: "Générateur automatique de planning hebdomadaire",
+        P4_2: "Technologie : Programmation par contraintes, Python, Algorithmes d'optimisation",
+        P4_1: "Client : Toute personne qui a besoin  d'automatiser la planification en fonction des contraintes de disponibilité.",
+        P4_3: "Développement d'un système qui génère automatiquement un planning hebdomadaire en analysant les disponibilités des individus et en appliquant une optimisation basée sur des contraintes. Assure une répartition efficace des ressources tout en respectant toutes les contraintes prédéfinies."
+,    
         footerText:"© Sami Ouakli. Tous droits réservés.",
         footer_P:"Projets",
-        // Compétences
+        
+          // Compétences
         Front: "Front-end",
         Back: "Back-end",
         Si: "Modélisation SI",
@@ -177,15 +188,15 @@ const translations = {
       P1_2: "Klant: Taaldepartement, Universiteit van Namen",
       P1_3: "Ontwikkeling van een platform voor het beheer van thuiswerk- en verlofaanvragen voor het Taaldepartement van de universiteit. De oplossing biedt beheerders en gebruikers tools om eenvoudig thuiswerkaanvragen te verwerken, verlof te volgen en gedetailleerde rapportages in te zien.",
   
-      P2: "Bestelbeheertoepassing voor Groente- en Fruitleveranciers",
-      P2_1: "Technologie: React",
-      P2_2: "Klant: Groente- en Fruitleveranciers",
-      P2_3: "Ontwerp van een applicatie voor het stroomlijnen van het bestelbeheer. Hiermee kunnen klanten bestellingen plaatsen en leveranciers deze bestellingen valideren en bevestigen. De applicatie bevat ook een real-time trackingfunctie voor lopende bestellingen.",
-  
-      P3: "Platform voor Administratieve Processen voor Buitenlands Studeren (in uitvoering)",
-      P3_1: "Klant: Studenten",
-      P3_2: "Technologie: Html, Css en js voor frontend, Flask voor backend",
-      P3_3: "Ontwikkeling van een centraal platform voor studenten die aan hun administratieve procedures beginnen voor studie in het buitenland. Het platform vereenvoudigt de toegang tot informatie, volgt de procedurestappen en biedt nuttige hulpmiddelen voor studenten die aan internationale mobiliteit deelnemen. Doel: Gestructureerde ondersteuning bieden aan studenten bij hun procedures voor studie in het buitenland.",
+    P2: "Business Intelligence Project voor analyse van hernieuwbare energiegegevens bij ELIA",
+  P2_1: "Technologie: SSIS en Power BI",
+  P2_2: "Klant: Elia",
+  P2_3: "Ontwerp en implementatie van een BI-oplossing om grote hoeveelheden gegevens over hernieuwbare energie (wind en zon) in België te analyseren. Toepassing van ETL-processen om gegevens te centraliseren en ontwikkeling van interactieve dashboards om trends te visualiseren en het energiebronnenbeheer te optimaliseren."
+,
+      P3: "Seeker - App voor wandelen en monumentontdekking",
+      P3_1: "Klant: Toeristen en wandelliefhebbers",
+      P3_2: "Technologie: Machine Learning, Grafenanalyse, Gegevensvisualisatie",
+      P3_3: "Ontwikkeling van een app die gebruik maakt van aanwijzingen verspreid over een gebied om gebruikers te helpen monumenten te ontdekken. De app berekent de kortste route naar monumenten terwijl het het aantal bezochte kunstwerken/plaatsen maximaliseert. Inzet van machine learning voor optimalisatie van aanwijzingen, grafenanalyse voor route-analyse en gegevensvisualisatie voor gebruiksvriendelijke interactie.",
   
       // Vaardigheden
       Front: "Front-end",
@@ -271,6 +282,10 @@ const translations = {
       document.getElementById("P3_1").textContent = translations[language].P3_1;
       document.getElementById("P3_2").textContent = translations[language].P3_2;
       document.getElementById("P3_3").textContent = translations[language].P3_3;
+      document.getElementById("P4").textContent = translations[language].P4;
+      document.getElementById("P4_1").textContent = translations[language].P4_1;
+      document.getElementById("P4_2").textContent = translations[language].P4_2;
+      document.getElementById("P4_3").textContent = translations[language].P4_3;
 
       // Certificat
       document.getElementById("Certificat").textContent = translations[language].Certificat;
