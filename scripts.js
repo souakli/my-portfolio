@@ -197,7 +197,12 @@ const translations = {
       P3_1: "Klant: Toeristen en wandelliefhebbers",
       P3_2: "Technologie: Machine Learning, Grafenanalyse, Gegevensvisualisatie",
       P3_3: "Ontwikkeling van een app die gebruik maakt van aanwijzingen verspreid over een gebied om gebruikers te helpen monumenten te ontdekken. De app berekent de kortste route naar monumenten terwijl het het aantal bezochte kunstwerken/plaatsen maximaliseert. Inzet van machine learning voor optimalisatie van aanwijzingen, grafenanalyse voor route-analyse en gegevensvisualisatie voor gebruiksvriendelijke interactie.",
-  
+      
+        P4: "Automatische weekplanning-generator",
+        P4_2: "Technologie: Constraint Programming, Python, Optimalisatie-algoritmen",
+        P4_1: "Klant: Iedereen heeft behoefte aan het automatiseren van planning op basis van beschikbaarheidsbeperkingen.",
+        P4_3: "Ontwikkeling van een systeem dat automatisch een weekplanning genereert door de beschikbaarheid van personen te analyseren en constraint-based optimalisatie toe te passen. Zorgt voor een efficiënte toewijzing van middelen terwijl alle vooraf gedefinieerde beperkingen worden gerespecteerd."
+      ,
       // Vaardigheden
       Front: "Front-end",
       Back: "Back-end",
